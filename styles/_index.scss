@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: $lightColor;
+    text-align: center;
+    font-size: 1rem;
+    color: $primaryColor;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    li {
+        padding: 0 1rem;
+        a {
+            color: $primaryColor;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $secondaryColor;
+        }
+    }
+}
+
+span {
+    color: $darkColor;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.875rem;
+    letter-spacing: 0.09375rem;
+    border: none;
+}
+
+.bg-primary {
+    color: $lightColor;
+    background-color: $secondaryColor;
+    &:hover {
+        color: $darkColor;
+    }
+}
+
+.bg-secondary {
+    color: $primaryColor;
+    background-color: $lightColor;
+    &:hover {
+        color: $secondaryColor;
+    }
+}
+
+.header {
+    height: 10vh;
+    background-color: $darkColor;
+    z-index: 1;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: inherit;
+        margin: 0 auto;
+        max-width: 80vw;
+        .brand {
+            display: flex;
+            align-items: center;
+            &__title {
+                color: $lightColor;
+                font-weight: 400;
+                line-height: 1.5;
+                text-transform: uppercase;
+                margin-left: 1rem;
+            }
+            &__logo {
+                width: 2rem;
+            }
+        }
+        .nav {
+            &__list {
+                a {
+                    color: $lightColor;
+                }
+                a:hover {
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    background-color: $darkColor;
+    color: $lightColor;
+    align-items: center;
+    border-top: 0.3px solid #bdbdbd;
+    &__title span {
+        color: $secondaryColor;
+    }
+    &__wrapper {
+        height: 45vh;
+        max-width: 60vw;
+        padding: 0 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .brand__logo {
+            width: 5vw;
+        }
+    }
+}
+
+.footer {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    &__wrapper {
+        width: 80vw;
+        .brand__logo {
+            width: 4vw;
+        }
+        .about {
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            margin: 0.5rem 0;
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.12);
+            &__content {
+                height: inherit;
+                display: flex;
+                margin-left: 1.5rem;
+                flex-direction: column;
+                justify-content: center;
+                p {
+                    max-width: 50%;
+                    text-align: left;
+                    line-height: 1.5;
+                    a {
+                        color: $secondaryColor;
+                    }
+                }
+                &__list {
+                    margin-top: 1rem;
+                    li:first-child {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+        .legal {
+            display: flex;
+            height: 15vh;
+            align-items: center;
+            p {
+                margin: auto 0 auto 2rem;
+                strong {
+                    color: $primaryColor;
+                    span {
+                        color: $secondaryColor;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
