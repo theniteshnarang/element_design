@@ -14,24 +14,24 @@
 <body>
 
     <header class="header">
-        <div class="header__wrapper">
-            <a class="brand" href="./index.html">
-                <img class="brand__logo" src="./data/img/logo.svg" alt="logo">
-                <span class="brand__title">Element Design</span>
+        <div class="header__wrapper flex flex--justify_between flex--align_center">
+            <a class="header__brand flex flex--align_center" href="./index.html">
+                <img class="header__brand__logo" src="./data/img/logo.svg" alt="logo">
+                <span class="header__brand__title">Element Design</span>
             </a>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav-item"><a href="./index.html">Home</a></li>
-                    <li class="nav-item"><a href="./docs.html">Docs</a></li>
-                    <li class="nav-item"><a href="#">Github</a></li>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__list__item"><a href="./index.html">Home</a></li>
+                    <li class="header__list__item"><a href="./docs.html">Docs</a></li>
+                    <li class="header__list__item"><a href="#">Github</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="hero">
-        <div class="hero__wrapper">
-            <img src="./data/img/brand_logo.svg" alt="" class="brand__logo">
+    <main class="hero flex flex--center">
+        <div class="hero__wrapper flex flex--column flex--justify_between flex--align_center">
+            <img src="./data/img/brand_logo.svg" alt="" class="hero__brand__logo">
             <h1 class="hero__title">Build beautiful products, <span>faster.</span></h1>
             <p class="hero__desc">Element is a design system – that helps teams build high-quality digital experiences.</p>
             <div class="hero__action">
@@ -41,27 +41,27 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer flex flex--justify_center">
         <div class="footer__wrapper">
-            <div class="about">
-                <a href="#">
-                    <img src="./data/img/logo.svg" class="brand__logo" alt="">
+            <div class="footer__about flex flex--align_center">
+                <a href="#" class="footer__logo">
+                    <img src="./data/img/logo.svg" alt="">
                 </a>
-                <div class="about__content">
+                <div class="footer__about__content flex flex--column flex--justify_center">
                     <p>
                         Element is an component library, developed for personal use by Nitesh Narang. It's designed is inspired by <a href="https://material.io/">Material Design</a>.
                     </p>
-                    <ul class='about__content__list'>
+                    <ul class='footer__about__content__list'>
                         <li><a href="#">Github</a></li>
                         <li><a href="https://twitter.com/theniteshnarang">Twitter</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="legal">
-                <a href="./index.html">
+            <div class="footer__legal flex flex--align_center">
+                <a href="./index.html" class="footer__logo">
                     <img class="brand__logo" src="./data/img/author_logo.svg" alt="">
                 </a>
-                <p><strong>© Made with <span>♥</span> , 2021.</strong></p>
+                <p class="footer__legal__content"><strong>© Made with <span>♥</span> , 2021.</strong></p>
             </div>
         </div>
     </footer>

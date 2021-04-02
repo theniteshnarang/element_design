@@ -1,55 +1,40 @@
-iframe {
-    z-index: -1;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100vw;
-}
-
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 5rem;
-    height: 80vh;
-    text-align: left;
-    .getting-started {
-        width: 60vw;
+    height: 120vh;
+    &__wrapper {
+        max-width: 80vw;
+        text-align: left;
         height: inherit;
-        margin: 0 auto 0 10.5rem;
-        &__content {
-            display: flex;
-            height: inherit;
-            flex-direction: column;
-            justify-content: space-around;
-            &__wrapper {
-                height: 30vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-            }
-        }
+        margin: 16.5vh auto 0 auto;
+    }
+    .footer {
+        height: 45vh;
+    }
+}
+
+.getting-started {
+    height: 75vh;
+    &__wrapper {
+        height: inherit;
+    }
+    &__content {
+        height: 30vh;
     }
 }
 
 .components {
     position: fixed;
+    z-index: 1;
     top: 10.5vh;
     right: 0vw;
-    width: 23vw;
-    margin-right: 3rem;
-    line-height: 1.5;
+    width: 18.5vw;
     background-color: inherit;
+    margin-right: 7rem;
+    line-height: 1.4;
     overflow-y: auto;
-    height: 89vh;
-    border-radius: 0.7rem;
+    height: 90vh;
+    border-radius: 0.5rem;
     font-size: 1.2rem;
     &__list {
-        display: flex;
-        flex-direction: column;
         box-shadow: 0 5px 5px $primaryColor, 0 0 50px rgba(0, 0, 0, 0.1) inset;
         text-align: left;
         li {

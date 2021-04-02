@@ -12,104 +12,106 @@
 
 <body>
     <header class="header">
-        <div class="header__wrapper">
-            <a class="brand" href="../index.html">
-                <img class="brand__logo" src="../data/img/logo.svg" alt="logo">
-                <span class="brand__title">Element Design</span>
+        <div class="header__wrapper flex flex--justify_between flex--align_center">
+            <a class="header__brand flex flex--align_center" href="../index.html">
+                <img class="header__brand__logo" src="../data/img/logo.svg" alt="logo">
+                <span class="header__brand__title">Element Design</span>
             </a>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav-item"><a href="../index.html">Home</a></li>
-                    <li class="nav-item"><a href="../docs.html">Docs</a></li>
-                    <li class="nav-item"><a href="#">Github</a></li>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__list__item"><a href="../index.html">Home</a></li>
+                    <li class="header__list__item"><a href="../docs.html">Docs</a></li>
+                    <li class="header__list__item"><a href="#">Github</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="main">
-        <div class="avatar">
-            <h1 class="avatar__title">Avatar</h1>
-            <div class="avatar__size">
-                <h2>Sizes</h2>
-                <div>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
-                </div>
-                <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E"
-                    style="width: 325px; height: 146px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        <div class="main__wrapper">
+            <div class="avatar">
+                <h1 class="avatar__title">Avatar</h1>
+                <div class="avatar__size">
+                    <h2>Sizes</h2>
+                    <div>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                    </div>
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E"
+                        style="width: 325px; height: 146px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
                 </iframe>
-            </div>
-            <div class="avatar__size">
-                <h2>Sizes</h2>
-                <div>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
                 </div>
-                <iframe src="https://carbon.now.sh/embed?bg=rgba%28238%2C238%2C238%2C1%29&t=material&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=174%25&si=false&es=4x&wm=false&code=%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E"
-                    style="width: 680px; height: 148px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+                <div class="avatar__size">
+                    <h2>Sizes</h2>
+                    <div>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                    </div>
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28238%2C238%2C238%2C1%29&t=material&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=174%25&si=false&es=4x&wm=false&code=%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E"
+                        style="width: 680px; height: 148px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
                 </iframe>
-            </div>
-            <div class="avatar__size">
-                <h2>Sizes</h2>
-                <div>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
                 </div>
-                <iframe src="https://carbon.now.sh/embed?bg=rgba%28238%2C238%2C238%2C1%29&t=material&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=174%25&si=false&es=4x&wm=false&code=%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E"
-                    style="width: 680px; height: 148px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+                <div class="avatar__size">
+                    <h2>Sizes</h2>
+                    <div>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                    </div>
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28238%2C238%2C238%2C1%29&t=material&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=174%25&si=false&es=4x&wm=false&code=%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E"
+                        style="width: 680px; height: 148px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
                 </iframe>
-            </div>
-            <div class="avatar__size">
-                <h2>Sizes</h2>
-                <div>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
-                    <span><img src="#" alt=""></span>
                 </div>
-                <iframe src="https://carbon.now.sh/embed?bg=rgba%28238%2C238%2C238%2C1%29&t=material&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=174%25&si=false&es=4x&wm=false&code=%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E"
-                    style="width: 680px; height: 148px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+                <div class="avatar__size">
+                    <h2>Sizes</h2>
+                    <div>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                        <span><img src="#" alt=""></span>
+                    </div>
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28238%2C238%2C238%2C1%29&t=material&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15.5px&lh=174%25&si=false&es=4x&wm=false&code=%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E%250A%253Cspan%253E%253Cimg%2520src%253D%2522%2523%2522%2520alt%253D%2522%2522%252F%253E%253C%252Fspan%253E"
+                        style="width: 680px; height: 148px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
                 </iframe>
+                </div>
             </div>
-        </div>
-        <footer class="footer">
-            <div class="footer__wrapper">
-                <div class="about">
-                    <a href="#">
-                        <img src="../data/img/logo.svg" class="brand__logo" alt="">
-                    </a>
-                    <div class="about__content">
-                        <p>
-                            Element is an component library, developed for personal use by Nitesh Narang. It's designed is inspired by <a href="https://material.io/">Material Design</a>.
-                        </p>
-                        <ul class='about__content__list'>
-                            <li><a href="#">Github</a></li>
-                            <li><a href="https://twitter.com/theniteshnarang">Twitter</a></li>
-                        </ul>
+            <footer class="footer flex flex--justify_center">
+                <div class="footer__wrapper">
+                    <div class="footer__about flex flex--align_center">
+                        <a href="#" class="footer__logo">
+                            <img src="../data/img/logo.svg" alt="">
+                        </a>
+                        <div class="footer__about__content flex flex--column flex--justify_center">
+                            <p>
+                                Element is an component library, developed for personal use by Nitesh Narang. It's designed is inspired by <a href="https://material.io/">Material Design</a>.
+                            </p>
+                            <ul class='footer__about__content__list'>
+                                <li><a href="#">Github</a></li>
+                                <li><a href="https://twitter.com/theniteshnarang">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__legal flex flex--align_center">
+                        <a href="./index.html" class="footer__logo">
+                            <img class="brand__logo" src="../data/img/author_logo.svg" alt="">
+                        </a>
+                        <p class="footer__legal__content"><strong>© Made with <span>♥</span> , 2021.</strong></p>
                     </div>
                 </div>
-                <div class="legal">
-                    <a href="./index.html">
-                        <img class="brand__logo" src="../data/img/author_logo.svg" alt="">
-                    </a>
-                    <p><strong>© Made with <span>♥</span> , 2021.</strong></p>
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </main>
 
     <aside class="components">
-        <ul class="components__list">
-            <li><a href="./../docs.html">Getting Started</a></li>
+        <ul class="components__list flex flex--column">
+            <li><a href="../docs.html">Getting Started</a></li>
             <li><a href="#">Introduction</a></li>
-            <li><a href="#">Avatar</a></li>
+            <li><a href="../components/avatar.html">Avatar</a></li>
             <li><a href="#">Alert</a></li>
             <li><a href="#">Badge</a></li>
             <li><a href="#">Button</a></li>
