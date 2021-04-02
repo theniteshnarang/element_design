@@ -13,6 +13,10 @@
 
 .getting-started {
     height: 75vh;
+    &__title {
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
     &__wrapper {
         height: inherit;
     }
@@ -35,7 +39,7 @@
     border-radius: 0.5rem;
     font-size: 1.2rem;
     &__list {
-        box-shadow: 0 5px 5px $primaryColor, 0 0 50px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 2px 2px $primaryColor, 0 0 40px rgba(0, 0, 0, 0.1) inset;
         text-align: left;
         li {
             margin: 0.3rem 0;
