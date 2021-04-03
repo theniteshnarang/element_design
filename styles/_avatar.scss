@@ -1,0 +1,34 @@
+.avatar {
+    border: 1px solid $primaryColor;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    &--badge {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        bottom: 0.7rem;
+        right: 1rem;
+    }
+    &--text {
+        font-size: 3rem;
+        padding: 0.6rem;
+    }
+    &__section {
+        height: 210vh;
+        max-width: 60vw;
+    }
+    &__content {
+        height: 60vh;
+        iframe {
+            margin-left: -5rem;
+        }
+        &__img {
+            width: 6rem;
+        }
+        span,
+        p {
+            margin-left: 1.5rem;
+        }
+    }
+}

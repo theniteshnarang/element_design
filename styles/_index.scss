@@ -41,6 +41,10 @@ span {
     font-weight: bold;
 }
 
+iframe {
+    margin-left: -10vw;
+}
+
 .btn {
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
@@ -87,6 +91,22 @@ span {
     &--center {
         align-items: center;
     }
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.p-relative {
+    position: relative;
 }
 
 .header {

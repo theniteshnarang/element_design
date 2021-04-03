@@ -1,13 +1,10 @@
 .layout {
-    iframe {
-        margin-left: -10vw;
-    }
     &__title {
         font-weight: bold;
         margin-bottom: 0.5rem;
     }
     &__desc {
-        height: 200vh;
+        height: 50vh;
         &__title {
             margin: 1rem 0;
         }

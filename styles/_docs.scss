@@ -13,6 +13,9 @@
 
 .getting-started {
     height: 75vh;
+    iframe {
+        margin-left: 0;
+    }
     &__title {
         font-weight: bold;
         margin-bottom: 1rem;
