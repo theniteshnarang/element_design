@@ -105,8 +105,12 @@ iframe {
     margin-bottom: 2rem;
 }
 
-.p-relative {
+.pos-rel {
     position: relative;
+}
+
+.active {
+    color: $secondaryColor;
 }
 
 .header {

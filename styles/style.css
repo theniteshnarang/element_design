@@ -128,8 +128,12 @@ iframe {
   margin-bottom: 2rem;
 }
 
-.p-relative {
+.pos-rel {
   position: relative;
+}
+
+.active {
+  color: #00adb5;
 }
 
 .header {
@@ -248,40 +252,79 @@ iframe {
   width: 4vw;
 }
 
-.main {
-  height: 120vh;
-}
-
-.main__wrapper {
-  max-width: 80vw;
+.main__section {
+  height: 100vh;
+  max-width: 63vw;
+  margin: 15vh auto 0 9vw;
   text-align: left;
-  height: inherit;
-  margin: 16.5vh auto 0 auto;
 }
 
-.main .footer {
-  height: 45vh;
-}
-
-.getting-started {
+.main__section--docs {
   height: 75vh;
+  margin-bottom: 3vh;
 }
 
-.getting-started iframe {
+.main__section--docs iframe {
+  margin-left: 1vw;
+}
+
+.main__section--layout {
+  height: 200vh;
+}
+
+.main__section--avatar {
+  height: 210vh;
+}
+
+.main__section--alert {
+  height: 110vh;
+}
+
+.main__desc--layout {
+  height: 45vh;
+  margin-bottom: 1rem;
+}
+
+.main__content {
+  height: 30vh;
+}
+
+.main__content__title {
+  margin-bottom: 1rem;
+}
+
+.main__content--layout {
+  height: 65vh;
+}
+
+.main__content--avatar {
+  height: 60vh;
+}
+
+.main__content--avatar iframe {
   margin-left: 0;
 }
 
-.getting-started__title {
+.main__content--avatar .main__content__img {
+  width: 6.5vw;
+}
+
+.main__content--avatar span,
+.main__content--avatar p {
+  margin-left: 2vw;
+}
+
+.main__content--alert {
+  height: 20vh;
+}
+
+.main__title {
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.getting-started__wrapper {
-  height: inherit;
-}
-
-.getting-started__content {
-  height: 30vh;
+.main .footer {
+  height: 45vh;
 }
 
 .components {
@@ -320,7 +363,7 @@ iframe {
   width: 1rem;
   height: 1rem;
   position: absolute;
-  bottom: 0.7rem;
+  bottom: 0.4rem;
   right: 1rem;
 }
 
@@ -329,42 +372,35 @@ iframe {
   padding: 0.6rem;
 }
 
-.avatar__section {
-  height: 210vh;
-  max-width: 60vw;
+.alert {
+  border: 1px solid #393e46;
+  border-radius: 0.3rem;
+  max-width: 30vw;
+  color: #eeeeee;
+  height: 2.8rem;
 }
 
-.avatar__content {
-  height: 60vh;
+.alert--success {
+  background-color: #38a169;
 }
 
-.avatar__content iframe {
-  margin-left: -5rem;
+.alert--error {
+  background-color: #e53e3e;
 }
 
-.avatar__content__img {
-  width: 6rem;
+.alert--warning {
+  background-color: #dd6b20;
 }
 
-.avatar__content span,
-.avatar__content p {
-  margin-left: 1.5rem;
+.alert--info {
+  background-color: #3182ce;
 }
 
-.layout__title {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.layout__desc {
-  height: 50vh;
-}
-
-.layout__desc__title {
-  margin: 1rem 0;
-}
-
-.layout__content__title {
-  margin: 1rem 0 2rem;
+.alert--cross {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 0;
+  right: 0;
+  margin-top: -0.3rem;
 }
 /*# sourceMappingURL=style.css.map */
