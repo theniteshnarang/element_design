@@ -8,7 +8,7 @@
             height: 75vh;
             margin-bottom: 3vh;
             iframe {
-                margin-left: 1vw;
+                margin-left: 1rem;
             }
         }
         &--layout {
@@ -20,10 +20,9 @@
         &--alert {
             height: 110vh;
         }
-    }
-    &__desc--layout {
-        height: 45vh;
-        margin-bottom: 1rem;
+        &--badge {
+            height: 55vh;
+        }
     }
     &__content {
         height: 30vh;
@@ -43,12 +42,16 @@
             }
             span,
             p {
-                margin-left: 2vw;
+                margin-left: 2rem;
             }
         }
         &--alert {
             height: 20vh;
         }
+    }
+    &__desc--layout {
+        height: 45vh;
+        margin-bottom: 1rem;
     }
     &__title {
         font-weight: bold;

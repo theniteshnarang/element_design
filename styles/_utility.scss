@@ -1,0 +1,133 @@
+// Coloured Background
+.bg-success {
+    background-color: $green-600;
+}
+
+.bg-error {
+    background-color: $red-600;
+}
+
+.bg-warning {
+    background-color: $yellow-600;
+}
+
+.bg-info {
+    background-color: $blue-600;
+}
+
+.bg-green-200 {
+    background-color: $green-200;
+}
+
+.bg-red-200 {
+    background-color: $red-200;
+}
+
+.bg-yellow-200 {
+    background-color: $yellow-200;
+}
+
+.bg-blue-200 {
+    background-color: $blue-200;
+}
+
+// Text Colors
+.color-success {
+    color: $green-600;
+}
+
+.color-error {
+    color: $red-600;
+}
+
+.color-warning {
+    color: $yellow-600;
+}
+
+.color-info {
+    color: $blue-600;
+}
+
+.color-green-200 {
+    color: $green-200;
+}
+
+.color-red-200 {
+    color: $red-200;
+}
+
+.color-yellow-200 {
+    color: $yellow-200;
+}
+
+.color-blue-200 {
+    color: $blue-200;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.875rem;
+    letter-spacing: 0.09375rem;
+    border: none;
+}
+
+.btn-primary {
+    color: $lightColor;
+    background-color: $secondaryColor;
+    &:hover {
+        color: $darkColor;
+    }
+}
+
+.btn-secondary {
+    color: $primaryColor;
+    background-color: $lightColor;
+    &:hover {
+        color: $secondaryColor;
+    }
+}
+
+.flex {
+    display: flex;
+    &--column {
+        flex-direction: column;
+    }
+    &--justify_between {
+        justify-content: space-between;
+    }
+    &--justify_center,
+    &--center {
+        justify-content: center;
+    }
+    &--justify_around {
+        justify-content: space-around;
+    }
+    &--align_center,
+    &--center {
+        align-items: center;
+    }
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.active {
+    color: $secondaryColor;
+}
