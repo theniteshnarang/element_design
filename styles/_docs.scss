@@ -67,15 +67,16 @@
     z-index: 1;
     top: 10.5vh;
     right: 0vw;
-    width: 18.5vw;
+    width: 19vw;
     background-color: inherit;
-    margin-right: 7rem;
-    line-height: 1.4;
+    margin-right: 6.2rem;
+    line-height: 1.5;
     overflow-y: auto;
     height: 90vh;
     border-radius: 0.5rem;
     font-size: 1.2rem;
     &__list {
+        padding: 1rem 0;
         box-shadow: 0 2px 2px $primaryColor, 0 0 40px rgba(0, 0, 0, 0.1) inset;
         text-align: left;
         li {
