@@ -6,36 +6,35 @@
         text-align: left;
         &--docs {
             height: 75vh;
-            margin-bottom: 3vh;
-            iframe {
-                margin-left: 1rem;
-            }
         }
         &--layout {
             height: 200vh;
+            iframe {
+                margin-left: -8.5rem;
+            }
         }
         &--avatar {
             height: 210vh;
         }
         &--alert {
-            height: 110vh;
+            height: 210vh;
         }
         &--badge {
-            height: 55vh;
+            height: 60vh;
+        }
+        &--button {
+            height: 115vh;
         }
     }
     &__content {
         height: 30vh;
-        &__title {
-            margin-bottom: 1rem;
-        }
         &--layout {
             height: 65vh;
         }
         &--avatar {
             height: 60vh;
             iframe {
-                margin-left: 0;
+                margin-left: 0.5rem;
             }
             .main__content__img {
                 width: 6.5vw;
@@ -46,7 +45,16 @@
             }
         }
         &--alert {
-            height: 20vh;
+            height: 50vh;
+            div {
+                margin-left: 2rem;
+            }
+        }
+        &--badge {
+            height: 40vh;
+        }
+        &--button {
+            height: 45vh;
         }
     }
     &__desc--layout {

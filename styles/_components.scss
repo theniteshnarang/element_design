@@ -27,7 +27,11 @@
         font-size: 1.7rem;
         top: 0;
         right: 0;
+        cursor: pointer;
         margin-top: -0.3rem;
+        &:hover {
+            color: $primaryColor;
+        }
     }
 }
 
@@ -35,4 +39,47 @@
     padding: 0.2rem 0.5rem;
     border-radius: 0.3rem;
     margin: 0 0.7rem;
+}
+
+.btn {
+    padding: 0 0.75rem;
+    margin: 0 0.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.875rem;
+    letter-spacing: 0.09375rem;
+    border: none;
+    &-primary {
+        color: $lightColor;
+        background-color: $secondaryColor;
+        &:hover {
+            color: $darkColor;
+        }
+    }
+    &-round {
+        border-radius: 7rem;
+        &--corner {
+            border-radius: 0.3rem;
+        }
+    }
+    &-outline {
+        border: 2px solid $primaryColor;
+        &:hover {
+            color: $lightColor;
+        }
+    }
+    &-secondary {
+        color: $primaryColor;
+        background-color: $lightColor;
+        &:hover {
+            color: $secondaryColor;
+        }
+    }
+    &--link {
+        padding: 0.5rem 1rem;
+    }
+    &:hover {
+        background-color: $secondaryColor;
+    }
 }

@@ -41,10 +41,6 @@ span {
     font-weight: bold;
 }
 
-iframe {
-    margin-left: -10rem;
-}
-
 .header {
     height: 10vh;
     background-color: $darkColor;
@@ -87,7 +83,6 @@ iframe {
     color: $lightColor;
     &__wrapper {
         height: 45vh;
-        margin-top: 2rem;
         max-width: 60vw;
         padding: 0 5rem;
     }

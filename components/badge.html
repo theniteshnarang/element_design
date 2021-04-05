@@ -9,6 +9,7 @@
 
     <link rel="shortcut icon" sizes="16*16" href="../data/img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
     <title>Element Design | Badge</title>
 </head>
@@ -32,15 +33,22 @@
 
     <main class="main">
         <div class="main__wrapper">
-            <div class="main__section main__section--badge flex flex--column flex--justify_around">
+            <div class="main__section main__section--badge flex flex--column flex--justify_between">
                 <h1 class="main__title">Badge</h1>
                 <p>Badges are used to highlight something over a item.</p>
                 <strong>There are types of Alert: </strong>
-                <div class="main__content">
-                    <span class="badge color-info bg-blue-200">INFO</span>
-                    <span class="badge color-success bg-green-200">SUCCESS</span>
-                    <span class="badge color-error bg-red-200">ERROR</span>
-                    <span class="badge color-warning bg-yellow-200">WARNING</span>
+                <div class="main__content main__content--badge flex flex--column flex--justify_between">
+                    <div class="ml-1 mt-1">
+                        <span class="badge color-info bg-blue-200">INFO</span>
+                        <span class="badge color-success bg-green-200">SUCCESS</span>
+                        <span class="badge color-error bg-red-200">ERROR</span>
+                        <span class="badge color-warning bg-yellow-200">WARNING</span>
+                    </div>
+
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge%2520color-info%2520bg-blue-200%2522%253EINFO%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522badge%2520color-success%2520bg-green-200%2522%253ESUCCESS%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522badge%2520color-error%2520bg-red-200%2522%253EERROR%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522badge%2520color-warning%2520bg-yellow-200%2522%253EWARNING%253C%252Fspan%253E%250A%2520"
+                        style="width: 731px; height: 178px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+
                 </div>
             </div>
             <footer class="footer flex flex--justify_center ">
