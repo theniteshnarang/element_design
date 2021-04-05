@@ -1,3 +1,4 @@
+// Avatar Component
 .avatar {
     border: 1px solid $primaryColor;
     border-radius: 50%;
@@ -17,6 +18,7 @@
     }
 }
 
+// Alert Component
 .alert {
     border-radius: 0.3rem;
     max-width: 30vw;
@@ -35,15 +37,16 @@
     }
 }
 
+// Badge Component
 .badge {
-    padding: 0.2rem 0.5rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 0.3rem;
     margin: 0 0.7rem;
 }
 
+// Button Component
 .btn {
     padding: 0 0.75rem;
-    margin: 0 0.5rem;
     line-height: 2rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -81,5 +84,50 @@
     }
     &:hover {
         background-color: $secondaryColor;
+    }
+}
+
+// Card Component
+.card {
+    max-width: 30rem;
+    box-shadow: 0 2px 2px $primaryColor, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    border-radius: 0.5rem;
+    &__image {
+        max-width: 10rem;
+        padding: 0.7rem;
+        &--col {
+            max-width: 100%;
+        }
+    }
+    &__content {
+        max-width: 19rem;
+        &--col {
+            min-height: 35vh;
+        }
+    }
+    &__header {
+        min-width: 100%;
+    }
+    &__icon {
+        cursor: pointer;
+        font-size: 1.3em;
+        margin-right: 0.5rem;
+        &:hover {
+            color: $secondaryColor;
+        }
+        &--col {
+            position: absolute;
+            right: 0.5vw;
+            top: 3vh;
+        }
+    }
+    &__strike {
+        text-decoration: line-through;
+        font-size: 0.75em;
+    }
+    &--col {
+        max-width: 15rem;
+        min-height: 80vh;
+        padding: 0.7rem 1rem;
     }
 }

@@ -32,11 +32,39 @@
 
     <main class="main">
         <div class="main__wrapper">
-            <div class="main__section main__section--cards">
+            <div class="main__section main__section--cards flex flex--column flex--justify_between">
                 <h1 class="main__title">Cards</h1>
                 <p>Used to display information to users, with button to trigger actions. These are very versatile and often found in eCommerce websites and blogs.</p>
                 <strong>There are types of Card: </strong>
-                <div class="main__content main__content--cards">
+                <div class="main__content--cards flex flex--column flex--justify_around">
+                    <h2>Horizontal</h2>
+                    <div class="card flex flex--justify_between pr-1">
+                        <img class="card__image" src="https://images-na.ssl-images-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg" alt="card-image">
+                        <div class="card__content flex flex--column flex--justify_around">
+                            <div class="flex flex--justify_between flex--align_center">
+                                <h4>Card Title</h4>
+                                <i class="card__icon bi bi-heart-fill color-primary"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, obcaecati aperiam. Sint iure, perferendis mollitia earum.</p>
+                            <span>Price: <strong class="color-secondary">₹2000</strong>  <span class="card__strike">₹2500</span> <span class="color-red-500">Save ₹500</span></span>
+                            <button class="btn bg-primary color-light btn-round--corner">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__content--cards-vertical flex flex--column flex--justify_between">
+                    <h2>Vertical</h2>
+                    <div class="card card--col">
+                        <div class="card__header pos-rel">
+                            <img class="card__image card__image--col" src="https://images-na.ssl-images-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg" alt="card-image" />
+                            <i class="card__icon card__icon--col bi bi-heart-fill color-primary"></i>
+                        </div>
+                        <div class="card__content--col flex flex--column flex--justify_around">
+                            <h4>Card Title</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, obcaecati aperiam. Sint iure, perferendis mollitia earum.</p>
+                            <span>Price: <strong class="color-secondary">₹2000</strong>  <span class="card__strike">₹2500</span> <span class="color-red-500">Save ₹500</span></span>
+                            <button class="btn bg-primary color-light btn-round--corner">Add To Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <footer class="footer flex flex--justify_center ">
@@ -67,7 +95,7 @@
     </main>
 
     <aside class="components ">
-        <ul class="components__list flex flex--column ">
+        <ul class="components__list flex flex--column">
             <li><a href="../docs.html ">Getting Started</a></li>
             <li><a href="../components/layout.html ">Layout</a></li>
             <li><a href="../components/avatar.html ">Avatar</a></li>

@@ -25,6 +25,9 @@
         &--button {
             height: 115vh;
         }
+        &--cards {
+            height: 160vh;
+        }
     }
     &__content {
         height: 30vh;
@@ -56,6 +59,12 @@
         &--button {
             height: 45vh;
         }
+        &--cards {
+            height: 45vh;
+            &-vertical {
+                height: 90vh;
+            }
+        }
     }
     &__desc--layout {
         height: 45vh;
@@ -75,7 +84,7 @@
     z-index: 1;
     top: 10.5vh;
     right: 0vw;
-    width: 19vw;
+    width: 16.8rem;
     background-color: inherit;
     margin-right: 6.2rem;
     line-height: 1.5;
@@ -84,7 +93,7 @@
     border-radius: 0.5rem;
     font-size: 1.2rem;
     &__list {
-        padding: 1rem 0;
+        padding: 1rem 0 1rem 0.5rem;
         box-shadow: 0 2px 2px $primaryColor, 0 0 40px rgba(0, 0, 0, 0.1) inset;
         text-align: left;
         li {
