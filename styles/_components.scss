@@ -92,6 +92,7 @@
     max-width: 30rem;
     box-shadow: 0 2px 2px $primaryColor, 0 0 40px rgba(0, 0, 0, 0.1) inset;
     border-radius: 0.5rem;
+    padding: 0.5rem;
     &__image {
         max-width: 10rem;
         padding: 0.7rem;
@@ -129,5 +130,11 @@
         max-width: 15rem;
         min-height: 80vh;
         padding: 0.7rem 1rem;
+    }
+}
+
+.image {
+    &--rounded {
+        border-radius: 50%;
     }
 }

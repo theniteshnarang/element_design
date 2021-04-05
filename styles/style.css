@@ -197,7 +197,11 @@ span {
 }
 
 .main__section--cards {
-  height: 160vh;
+  height: 250vh;
+}
+
+.main__section--images {
+  height: 140vh;
 }
 
 .main__content {
@@ -242,11 +246,15 @@ span {
 }
 
 .main__content--cards {
-  height: 45vh;
+  height: 80vh;
 }
 
 .main__content--cards-vertical {
-  height: 90vh;
+  height: 140vh;
+}
+
+.main__content--images {
+  height: 60vh;
 }
 
 .main__desc--layout {
@@ -393,6 +401,7 @@ span {
   -webkit-box-shadow: 0 2px 2px #393e46, 0 0 40px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 2px 2px #393e46, 0 0 40px rgba(0, 0, 0, 0.1) inset;
   border-radius: 0.5rem;
+  padding: 0.5rem;
 }
 
 .card__image {
@@ -441,6 +450,10 @@ span {
   max-width: 15rem;
   min-height: 80vh;
   padding: 0.7rem 1rem;
+}
+
+.image--rounded {
+  border-radius: 50%;
 }
 
 .bg-primary {
@@ -567,6 +580,12 @@ span {
 .flex--justify_around {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.flex--align_start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .flex--align_center, .flex--center {

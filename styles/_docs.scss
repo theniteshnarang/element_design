@@ -26,7 +26,10 @@
             height: 115vh;
         }
         &--cards {
-            height: 160vh;
+            height: 250vh;
+        }
+        &--images {
+            height: 140vh;
         }
     }
     &__content {
@@ -60,10 +63,13 @@
             height: 45vh;
         }
         &--cards {
-            height: 45vh;
+            height: 80vh;
             &-vertical {
-                height: 90vh;
+                height: 140vh;
             }
+        }
+        &--images {
+            height: 60vh;
         }
     }
     &__desc--layout {
