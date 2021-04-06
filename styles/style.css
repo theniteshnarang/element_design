@@ -49,7 +49,7 @@ span {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100vw;
+  min-width: 100vw;
   z-index: 1;
 }
 
@@ -86,7 +86,7 @@ span {
 }
 
 .header__brand__logo {
-  width: 2.5vw;
+  max-width: 2.5vw;
 }
 
 .hero {
@@ -114,7 +114,7 @@ span {
 }
 
 .footer__wrapper {
-  width: 80vw;
+  min-width: 80vw;
 }
 
 .footer__about {
@@ -168,7 +168,7 @@ span {
 }
 
 .footer__logo img {
-  width: 4vw;
+  max-width: 4vw;
 }
 
 .main__section {
@@ -239,7 +239,7 @@ span {
 }
 
 .main__content--avatar .main__content__img {
-  width: 6.5vw;
+  max-width: 6.5vw;
 }
 
 .main__content--avatar span,
@@ -313,7 +313,7 @@ span {
   z-index: 1;
   top: 10.5vh;
   right: 0vw;
-  width: 18rem;
+  min-width: 18rem;
   background-color: inherit;
   margin-right: 7.3rem;
   line-height: 1.5;
@@ -325,8 +325,8 @@ span {
 
 .components__list {
   padding: 1rem 0 1rem 1.5rem;
-  -webkit-box-shadow: 0 2px 2px #393e46, 0 0 40px rgba(0, 0, 0, 0.1) inset;
-          box-shadow: 0 2px 2px #393e46, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   text-align: left;
 }
 

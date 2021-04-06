@@ -50,7 +50,7 @@
                 margin-left: 0.5rem;
             }
             .main__content__img {
-                width: 6.5vw;
+                max-width: 6.5vw;
             }
             span,
             p {
@@ -112,7 +112,7 @@
     z-index: 1;
     top: 10.5vh;
     right: 0vw;
-    width: 18rem;
+    min-width: 18rem;
     background-color: inherit;
     margin-right: 7.3rem;
     line-height: 1.5;
@@ -122,7 +122,7 @@
     font-size: 1.2rem;
     &__list {
         padding: 1rem 0 1rem 1.5rem;
-        box-shadow: 0 2px 2px $primaryColor, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
         text-align: left;
         li {
             margin: 0.3rem 0;

@@ -46,7 +46,7 @@ span {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100vw;
+    min-width: 100vw;
     z-index: 1;
     &__wrapper {
         height: inherit;
@@ -76,7 +76,7 @@ span {
             margin-left: 1rem;
         }
         &__logo {
-            width: 2.5vw;
+            max-width: 2.5vw;
         }
     }
 }
@@ -101,7 +101,7 @@ span {
 .footer {
     height: 40vh;
     &__wrapper {
-        width: 80vw;
+        min-width: 80vw;
     }
     &__about {
         height: 30vh;
@@ -143,6 +143,6 @@ span {
         }
     }
     &__logo img {
-        width: 4vw;
+        max-width: 4vw;
     }
 }
