@@ -24,7 +24,6 @@ ul {
     list-style: none;
     display: flex;
     li {
-        padding: 0 1rem;
         a {
             color: $primaryColor;
             text-decoration: none;
@@ -55,11 +54,17 @@ span {
         max-width: 80vw;
     }
     &__list {
-        a {
+        min-width: 18vw;
+        &__item {
             color: $lightColor;
-        }
-        a:hover {
-            color: $secondaryColor;
+            &:hover {
+                color: $secondaryColor;
+            }
+            &:focus {
+                padding: 1rem 2rem;
+                border: 2px solid $secondaryColor;
+                border-radius: 0.3rem;
+            }
         }
     }
     &__brand {
@@ -113,11 +118,14 @@ span {
                     color: $secondaryColor;
                 }
             }
-            &__list {
-                margin-top: 1rem;
-                li:first-child {
-                    padding-left: 0;
-                }
+        }
+        &__list {
+            margin-top: 1rem;
+            &__item {
+                padding: 0 0.5rem;
+            }
+            &__item:first-child {
+                padding-left: 0;
             }
         }
     }

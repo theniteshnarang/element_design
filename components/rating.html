@@ -21,10 +21,10 @@
                 <span class="header__brand__title">Element Design</span>
             </a>
             <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__list__item"><a href="../index.html">Home</a></li>
-                    <li class="header__list__item"><a href="../docs.html">Docs</a></li>
-                    <li class="header__list__item"><a href="https://github.com/theniteshnarang/element_design">Github</a></li>
+                <ul class="header__list flex flex--justify_between">
+                    <li><a class="header__list__item" href="../index.html">Home</a></li>
+                    <li><a class="header__list__item active" href="../docs.html">Docs</a></li>
+                    <li><a class="header__list__item" href="https://github.com/theniteshnarang/element_design">Github</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,8 +34,18 @@
         <div class="main__wrapper">
             <div class="main__section main__section--rating">
                 <h1 class="main__title">Rating</h1>
-                <p>Often denoted as stars, ratings indicate quality of a particular entity. Mostly used on eCommerce websites.</p>
-                <div class="main__content main__content--rating">
+                <p>Often denoted as stars, ratings indicate quality of a particular entity. Mostly used on eCommerce websites.
+                </p>
+                <div class="main__content main__content--rating flex flex--column flex--justify_around">
+                    <div class="rating mt-1 ml-1">
+                        <span class="badge color-red-200 bg-red-400">4.1
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="color-gray-500">(8965)</span>
+                    </div>
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating%2520mt-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cspan%2520class%253D%2522badge%2520color-red-200%2520bg-red-400%2522%253E4.1%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-star-fill%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cspan%2520class%253D%2522color-gray-500%2522%253E%288965%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%252Fdiv%253E"
+                        style="width: 731px; height: 217px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
                 </div>
             </div>
             <footer class="footer flex flex--justify_center ">
@@ -48,9 +58,9 @@
                             <p>
                                 Element is an component library, developed for personal use by Nitesh Narang. It's designed is inspired by <a href="https://material.io/ ">Material Design</a>.
                             </p>
-                            <ul class='footer__about__content__list'>
-                                <li><a href="https://github.com/theniteshnarang">Github</a></li>
-                                <li><a href="https://twitter.com/theniteshnarang ">Twitter</a></li>
+                            <ul class='footer__about__list'>
+                                <li><a class="footer__about__list__item" href="https://github.com/theniteshnarang">Github</a></li>
+                                <li><a class="footer__about__list__item" href="https://twitter.com/theniteshnarang">Twitter</a></li>
                             </ul>
                         </div>
                     </div>

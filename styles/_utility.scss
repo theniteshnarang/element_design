@@ -21,8 +21,19 @@
     &-green-200 {
         background-color: $green-200;
     }
-    &-red-200 {
-        background-color: $red-200;
+    &-red {
+        &-200 {
+            background-color: $red-200;
+        }
+        &-300 {
+            background-color: $red-300;
+        }
+        &-400 {
+            background-color: $red-400;
+        }
+        &-500 {
+            background-color: $red-500;
+        }
     }
     &-yellow-200 {
         background-color: $yellow-200;
@@ -69,6 +80,20 @@
         }
         &-500 {
             color: $red-500;
+        }
+    }
+    &-gray {
+        &-200 {
+            color: $gray-200;
+        }
+        &-300 {
+            color: $gray-300;
+        }
+        &-500 {
+            color: $gray-500;
+        }
+        &-600 {
+            color: $gray-600;
         }
     }
     &-yellow-200 {
@@ -226,4 +251,5 @@
 
 .active {
     color: $secondaryColor;
+    font-weight: bold;
 }

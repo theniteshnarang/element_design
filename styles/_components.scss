@@ -41,7 +41,6 @@
 .badge {
     padding: 0.3rem 0.8rem;
     border-radius: 0.3rem;
-    margin: 0 0.7rem;
 }
 
 // Button Component
@@ -181,5 +180,26 @@
         &:hover {
             background-color: $blue-200;
         }
+    }
+}
+
+.search-bar {
+    &__input {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        outline: 1px solid $gray-600;
+        color: $darkColor;
+        &:focus {
+            outline-color: $secondaryColor;
+            border-color: $secondaryColor;
+        }
+    }
+    &__icon {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 1.5rem;
+        color: $secondaryColor;
     }
 }
