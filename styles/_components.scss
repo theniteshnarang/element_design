@@ -138,3 +138,25 @@
         border-radius: 50%;
     }
 }
+
+.input {
+    padding: 0.3rem 0.2rem;
+    border: 1px solid $primaryColor;
+    outline: 1px solid $primaryColor;
+    color: $primaryColor;
+    &-label {
+        margin: 0.5rem 0;
+        color: $primaryColor;
+    }
+    &-required {
+        margin-top: 0.5rem;
+    }
+    &--error {
+        border-color: $red-600;
+        outline-color: $red-500;
+    }
+    &:focus {
+        border-color: $secondaryColor;
+        outline-color: $secondaryColor;
+    }
+}

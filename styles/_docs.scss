@@ -31,6 +31,9 @@
         &--images {
             height: 140vh;
         }
+        &--inputs {
+            // height: 60vh;
+        }
     }
     &__content {
         height: 30vh;
@@ -70,6 +73,10 @@
         }
         &--images {
             height: 60vh;
+        }
+        &--inputs {
+            height: 50vh;
+            max-width: 17vw;
         }
     }
     &__desc--layout {
