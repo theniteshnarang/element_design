@@ -90,7 +90,7 @@
 // Card Component
 .card {
     max-width: 30rem;
-    box-shadow: 0 2px 2px $primaryColor, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     border-radius: 0.5rem;
     padding: 0.5rem;
     &__image {
@@ -158,5 +158,28 @@
     &:focus {
         border-color: $secondaryColor;
         outline-color: $secondaryColor;
+    }
+}
+
+.list {
+    max-height: 42vh;
+    overflow-y: auto;
+    box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1);
+    border: 1px solid $gray-300;
+    &__item {
+        padding: 1rem;
+        border-bottom: 1px solid $gray-300;
+        &--spaced {
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border: 1px solid $gray-300;
+            &:hover {
+                box-shadow: 2px 2px 3px 0 rgba(1, 1, 1, 0.1);
+                transform: scale(1.03);
+            }
+        }
+        &:hover {
+            background-color: $blue-200;
+        }
     }
 }

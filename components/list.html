@@ -32,11 +32,37 @@
 
     <main class="main">
         <div class="main__wrapper">
-            <div class="main__section main__section--lists">
+            <div class="main__section main__section--lists flex flex--column flex--justify_around">
                 <h1 class="main__title">Lists</h1>
                 <p>Lists are used to present list of information in well formed and semantic way. There are three different types of list in HTML and each one has a specific purpose and meaning.</p>
                 <strong>There are types of List: </strong>
-                <div class="main__content main__content--lists">
+                <div class="main__content main__content--lists flex flex--column flex--justify_around">
+                    <h3>Stacked List</h3>
+                    <ul class="list flex flex--column">
+                        <li class="list__item flex flex--center">List item 1</li>
+                        <li class="list__item flex flex--center">List item 2</li>
+                        <li class="list__item flex flex--center">List item 3</li>
+                        <li class="list__item flex flex--center">List item 4</li>
+                        <li class="list__item flex flex--center">List item 5</li>
+                        <li class="list__item flex flex--center">List item 6</li>
+                        <li class="list__item flex flex--center">List item 7</li>
+                    </ul>
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2520flex%2520flex--column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25205%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25206%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25207%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%252Ful%253E"
+                        style="width: 731px; height: 295px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <div class="main__content main__content--lists flex flex--column flex--justify_around">
+                    <h3>Spaced List</h3>
+                    <ul class="flex flex--column">
+                        <li class="list__item--spaced flex flex--center">List item 1</li>
+                        <li class="list__item--spaced flex flex--center">List item 2</li>
+                        <li class="list__item--spaced flex flex--center">List item 3</li>
+                        <li class="list__item--spaced flex flex--center">List item 4</li>
+                        <li class="list__item--spaced flex flex--center">List item 5</li>
+                    </ul>
+                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522flex%2520flex--column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item--spaced%2520flex%2520flex--center%2522%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item--spaced%2520flex%2520flex--center%2522%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item--spaced%2520flex%2520flex--center%2522%253EList%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item--spaced%2520flex%2520flex--center%2522%253EList%2520item%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item--spaced%2520flex%2520flex--center%2522%253EList%2520item%25205%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%252Ful%253E"
+                        style="width: 731px; height: 243px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+                    </iframe>
                 </div>
             </div>
             <footer class="footer flex flex--justify_center ">

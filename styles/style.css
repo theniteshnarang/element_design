@@ -204,6 +204,10 @@ span {
   height: 140vh;
 }
 
+.main__section--lists {
+  height: 250vh;
+}
+
 .main__content {
   height: 30vh;
 }
@@ -260,6 +264,11 @@ span {
 .main__content--inputs {
   height: 50vh;
   max-width: 17vw;
+}
+
+.main__content--lists {
+  max-width: 40vw;
+  height: 110vh;
 }
 
 .main__desc--layout {
@@ -403,8 +412,8 @@ span {
 
 .card {
   max-width: 30rem;
-  -webkit-box-shadow: 0 2px 2px #393e46, 0 0 40px rgba(0, 0, 0, 0.1) inset;
-          box-shadow: 0 2px 2px #393e46, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
@@ -485,6 +494,36 @@ span {
 .input:focus {
   border-color: #00adb5;
   outline-color: #00adb5;
+}
+
+.list {
+  max-height: 42vh;
+  overflow-y: auto;
+  -webkit-box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1);
+          box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1);
+  border: 1px solid #D1D5DB;
+}
+
+.list__item {
+  padding: 1rem;
+  border-bottom: 1px solid #D1D5DB;
+}
+
+.list__item--spaced {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 1px solid #D1D5DB;
+}
+
+.list__item--spaced:hover {
+  -webkit-box-shadow: 2px 2px 3px 0 rgba(1, 1, 1, 0.1);
+          box-shadow: 2px 2px 3px 0 rgba(1, 1, 1, 0.1);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.list__item:hover {
+  background-color: #BFDBFE;
 }
 
 .bg-primary {
