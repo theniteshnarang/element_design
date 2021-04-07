@@ -45,7 +45,7 @@
 
 // Button Component
 .btn {
-    padding: 0 0.75rem;
+    padding: 0.3rem 1rem;
     line-height: 2rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -53,10 +53,34 @@
     letter-spacing: 0.09375rem;
     border: none;
     &-primary {
-        color: $lightColor;
-        background-color: $secondaryColor;
+        color: $primaryColor;
+        background-color: $lightColor;
         &:hover {
             color: $darkColor;
+            background-color: $gray-300;
+        }
+    }
+    &-secondary,
+    &-solid {
+        color: $lightColor;
+        background-color: $primaryColor;
+        &:hover {
+            color: $darkColor;
+            background-color: $secondaryColor;
+        }
+    }
+    &-secondary,
+    &-outline {
+        border: 2px solid $lightColor;
+        &:hover {
+            border: none;
+        }
+    }
+    &-outline {
+        border-color: $primaryColor;
+        &:hover {
+            color: $lightColor;
+            background-color: $secondaryColor;
         }
     }
     &-round {
@@ -65,24 +89,8 @@
             border-radius: 0.3rem;
         }
     }
-    &-outline {
-        border: 2px solid $primaryColor;
-        &:hover {
-            color: $lightColor;
-        }
-    }
-    &-secondary {
-        color: $primaryColor;
-        background-color: $lightColor;
-        &:hover {
-            color: $darkColor;
-        }
-    }
     &--link {
         padding: 0.5rem 1rem;
-    }
-    &:hover {
-        background-color: $secondaryColor;
     }
 }
 

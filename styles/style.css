@@ -381,7 +381,7 @@ span {
 }
 
 .btn {
-  padding: 0 0.75rem;
+  padding: 0.3rem 1rem;
   line-height: 2rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -391,12 +391,40 @@ span {
 }
 
 .btn-primary {
-  color: #eeeeee;
-  background-color: #00adb5;
+  color: #393e46;
+  background-color: #eeeeee;
 }
 
 .btn-primary:hover {
   color: #222831;
+  background-color: #D1D5DB;
+}
+
+.btn-secondary, .btn-solid {
+  color: #eeeeee;
+  background-color: #393e46;
+}
+
+.btn-secondary:hover, .btn-solid:hover {
+  color: #222831;
+  background-color: #00adb5;
+}
+
+.btn-secondary, .btn-outline {
+  border: 2px solid #eeeeee;
+}
+
+.btn-secondary:hover, .btn-outline:hover {
+  border: none;
+}
+
+.btn-outline {
+  border-color: #393e46;
+}
+
+.btn-outline:hover {
+  color: #eeeeee;
+  background-color: #00adb5;
 }
 
 .btn-round {
@@ -407,29 +435,8 @@ span {
   border-radius: 0.3rem;
 }
 
-.btn-outline {
-  border: 2px solid #393e46;
-}
-
-.btn-outline:hover {
-  color: #eeeeee;
-}
-
-.btn-secondary {
-  color: #393e46;
-  background-color: #eeeeee;
-}
-
-.btn-secondary:hover {
-  color: #222831;
-}
-
 .btn--link {
   padding: 0.5rem 1rem;
-}
-
-.btn:hover {
-  background-color: #00adb5;
 }
 
 .card {
