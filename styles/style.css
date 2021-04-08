@@ -84,6 +84,10 @@ span {
   border-radius: 0.3rem;
 }
 
+.header__brand {
+  text-decoration: none;
+}
+
 .header__brand__title {
   color: var(--light-color);
   font-weight: 400;
@@ -142,6 +146,7 @@ span {
 }
 
 .footer__about__content p a {
+  text-decoration: none;
   color: var(--secondary-color);
 }
 
@@ -469,6 +474,7 @@ span {
 
 .btn--link {
   padding: 0.5rem 1rem;
+  text-decoration: none;
 }
 
 .btn:focus {
