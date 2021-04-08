@@ -38,6 +38,9 @@
         &--search_bar {
             height: 77vh;
         }
+        &--modal {
+            height: 125vh;
+        }
     }
     &__content {
         height: 30vh;
@@ -92,6 +95,10 @@
         &--search_bar {
             max-width: 40vw;
             height: 60vh;
+        }
+        &--modal {
+            // z-index: -1;
+            height: 115vh;
         }
     }
     &__desc--layout {

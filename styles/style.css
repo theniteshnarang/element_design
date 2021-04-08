@@ -229,6 +229,10 @@ span {
   height: 77vh;
 }
 
+.main__section--modal {
+  height: 125vh;
+}
+
 .main__content {
   height: 30vh;
 }
@@ -299,6 +303,10 @@ span {
 .main__content--search_bar {
   max-width: 40vw;
   height: 60vh;
+}
+
+.main__content--modal {
+  height: 115vh;
 }
 
 .main__desc--layout {
@@ -389,7 +397,7 @@ span {
 
 .btn {
   padding: 0.3rem 1rem;
-  line-height: 2rem;
+  line-height: 2;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.875rem;
@@ -442,8 +450,26 @@ span {
   border-radius: 0.3rem;
 }
 
+.btn-icon {
+  padding: 0;
+  background-color: inherit;
+}
+
+.btn-icon:hover {
+  color: var(--secondary-color);
+}
+
+.btn-sm {
+  line-height: 1.5;
+  padding: 0.3rem 0.75rem;
+}
+
 .btn--link {
   padding: 0.5rem 1rem;
+}
+
+.btn:focus {
+  outline: thin dotted;
 }
 
 .card {
@@ -584,13 +610,49 @@ span {
   color: var(--secondary-color);
 }
 
-.modal-close {
-  border: none;
-  font-size: 2rem;
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.modal-close:hover {
-  color: var(--secondary-color);
+.modal-content {
+  border-radius: 0.3rem;
+  width: 40vw;
+  background-color: white;
+}
+
+.modal-body {
+  min-height: 15vh;
+  border: 1px solid #E5E7EB;
+  border-left: 0;
+  border-right: 0;
+}
+
+.modal-header {
+  min-height: 7vh;
+}
+
+.modal-footer {
+  min-height: 10vh;
+}
+
+.modal-hide {
+  display: none !important;
+}
+
+.modal-close {
+  cursor: pointer;
+}
+
+.modal-btn {
+  position: absolute;
+  top: -1.7vh;
+  right: 1.8vw;
 }
 
 .bg-primary {
@@ -619,6 +681,22 @@ span {
 
 .bg-green-200 {
   background-color: #A7F3D0;
+}
+
+.bg-gray-200 {
+  background-color: #E5E7EB;
+}
+
+.bg-gray-300 {
+  background-color: #D1D5DB;
+}
+
+.bg-gray-500 {
+  background-color: #6B7280;
+}
+
+.bg-gray-600 {
+  background-color: #4B5563;
 }
 
 .bg-red-200 {
@@ -753,6 +831,12 @@ span {
           align-items: flex-start;
 }
 
+.flex--justify_end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .flex--align_center, .flex--center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -765,6 +849,22 @@ span {
 
 .m-1 {
   margin: 1rem;
+}
+
+.mlr-1 {
+  margin: 0 1rem;
+}
+
+.mtb-1 {
+  margin: 1rem 0;
+}
+
+.plr-1 {
+  padding: 0 1rem;
+}
+
+.ptb-1 {
+  padding: 1rem 0;
 }
 
 .ml-1 {
@@ -813,10 +913,6 @@ span {
 
 .mb-3 {
   margin-bottom: 3rem;
-}
-
-.mlr-1 {
-  margin: 0 1rem;
 }
 
 .pl-1 {
@@ -877,6 +973,10 @@ span {
 
 .pos-rel {
   position: relative;
+}
+
+.hide-scroll {
+  overflow: hidden;
 }
 
 .active {

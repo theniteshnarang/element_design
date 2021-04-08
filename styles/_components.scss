@@ -46,7 +46,7 @@
 // Button Component
 .btn {
     padding: 0.3rem 1rem;
-    line-height: 2rem;
+    line-height: 2;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.875rem;
@@ -89,8 +89,22 @@
             border-radius: 0.3rem;
         }
     }
+    &-icon {
+        padding: 0;
+        background-color: inherit;
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
+    &-sm {
+        line-height: 1.5;
+        padding: 0.3rem 0.75rem;
+    }
     &--link {
         padding: 0.5rem 1rem;
+    }
+    &:focus {
+        outline: thin dotted;
     }
 }
 
@@ -140,12 +154,14 @@
     }
 }
 
+//Image Component
 .image {
     &--rounded {
         border-radius: 50%;
     }
 }
 
+//Input Component
 .input {
     padding: 0.3rem 0.2rem;
     border: 1px solid var(--primary-color);
@@ -168,6 +184,7 @@
     }
 }
 
+// List Component
 .list {
     max-height: 42vh;
     overflow-y: auto;
@@ -191,6 +208,7 @@
     }
 }
 
+// Search Bar Component
 .search-bar {
     &__input {
         width: 100%;
@@ -214,11 +232,39 @@
 }
 
 .modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    &-content {
+        border-radius: 0.3rem;
+        width: 40vw;
+        background-color: white;
+    }
+    &-body {
+        min-height: 15vh;
+        border: 1px solid $gray-200;
+        border-left: 0;
+        border-right: 0;
+    }
+    &-header {
+        min-height: 7vh;
+    }
+    &-footer {
+        min-height: 10vh;
+    }
+    &-hide {
+        display: none !important;
+    }
     &-close {
-        border: none;
-        font-size: 2rem;
-        &:hover {
-            color: var(--secondary-color);
-        }
+        cursor: pointer;
+    }
+    &-btn {
+        position: absolute;
+        top: -1.7vh;
+        right: 1.8vw;
     }
 }
