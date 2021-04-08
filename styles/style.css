@@ -9,12 +9,19 @@
   font-family: "Roboto", sans-serif;
 }
 
+:root {
+  --primary-color: #393e46;
+  --secondary-color: #00adb5;
+  --dark-color: #222831;
+  --light-color: #eeeeee;
+}
+
 body {
   height: 100vh;
-  background-color: #eeeeee;
+  background-color: var(--light-color);
   text-align: center;
   font-size: 1rem;
-  color: #393e46;
+  color: var(--primary-color);
 }
 
 h1 {
@@ -29,23 +36,23 @@ ul {
 }
 
 ul li a {
-  color: #393e46;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
 ul li a:hover {
-  color: #00adb5;
+  color: var(--secondary-color);
 }
 
 span {
-  color: #222831;
+  color: var(--dark-color);
   font-weight: bold;
 }
 
 .header {
   height: 10vh;
-  background-color: #222831;
-  border-bottom: 0.3px solid #eeeeee;
+  background-color: var(--dark-color);
+  border-bottom: 0.3px solid var(--light-color);
   position: fixed;
   top: 0;
   right: 0;
@@ -64,21 +71,21 @@ span {
 }
 
 .header__list__item {
-  color: #eeeeee;
+  color: var(--light-color);
 }
 
 .header__list__item:hover {
-  color: #00adb5;
+  color: var(--secondary-color);
 }
 
 .header__list__item:focus {
   padding: 1rem 2rem;
-  border: 2px solid #00adb5;
+  border: 2px solid var(--secondary-color);
   border-radius: 0.3rem;
 }
 
 .header__brand__title {
-  color: #eeeeee;
+  color: var(--light-color);
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase;
@@ -91,8 +98,8 @@ span {
 
 .hero {
   height: 70vh;
-  background-color: #222831;
-  color: #eeeeee;
+  background-color: var(--dark-color);
+  color: var(--light-color);
 }
 
 .hero__wrapper {
@@ -106,7 +113,7 @@ span {
 }
 
 .hero__title span {
-  color: #00adb5;
+  color: var(--secondary-color);
 }
 
 .footer {
@@ -135,7 +142,7 @@ span {
 }
 
 .footer__about__content p a {
-  color: #00adb5;
+  color: var(--secondary-color);
 }
 
 .footer__about__list {
@@ -159,11 +166,11 @@ span {
 }
 
 .footer__legal__content strong {
-  color: #393e46;
+  color: var(--primary-color);
 }
 
 .footer__legal__content strong span {
-  color: #00adb5;
+  color: var(--secondary-color);
   font-size: 1.25rem;
 }
 
@@ -174,7 +181,7 @@ span {
 .main__section {
   height: 100vh;
   max-width: 58vw;
-  margin: 15vh auto 0 9vw;
+  margin: 6rem auto 0 7.35rem;
   text-align: left;
 }
 
@@ -313,7 +320,7 @@ span {
   z-index: 1;
   top: 10.5vh;
   right: 0vw;
-  min-width: 18rem;
+  min-width: 21.3vw;
   background-color: inherit;
   margin-right: 7.3rem;
   line-height: 1.5;
@@ -335,31 +342,31 @@ span {
 }
 
 .avatar {
-  border: 1px solid #393e46;
+  border: 1px solid var(--primary-color);
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  width: 6vw;
+  height: 6vw;
 }
 
 .avatar--badge {
-  width: 1rem;
-  height: 1rem;
+  width: 1vw;
+  height: 1vw;
   position: absolute;
-  bottom: 0.4rem;
-  right: 1rem;
+  bottom: 0.6vw;
+  right: 1vw;
 }
 
 .avatar--text {
   font-size: 3rem;
   padding: 0.6rem;
-  color: #eeeeee;
+  color: var(--light-color);
 }
 
 .alert {
   border-radius: 0.3rem;
   max-width: 30vw;
-  color: #eeeeee;
-  height: 2.8rem;
+  color: var(--light-color);
+  height: 6.5vh;
 }
 
 .alert--cross {
@@ -372,7 +379,7 @@ span {
 }
 
 .alert--cross:hover {
-  color: #393e46;
+  color: var(--primary-color);
 }
 
 .badge {
@@ -391,40 +398,40 @@ span {
 }
 
 .btn-primary {
-  color: #393e46;
-  background-color: #eeeeee;
+  color: var(--primary-color);
+  background-color: var(--light-color);
 }
 
 .btn-primary:hover {
-  color: #222831;
+  color: var(--dark-color);
   background-color: #D1D5DB;
 }
 
 .btn-secondary, .btn-solid {
-  color: #eeeeee;
-  background-color: #393e46;
+  color: var(--light-color);
+  background-color: var(--primary-color);
 }
 
 .btn-secondary:hover, .btn-solid:hover {
-  color: #222831;
-  background-color: #00adb5;
+  color: var(--dark-color);
+  background-color: var(--secondary-color);
 }
 
 .btn-secondary, .btn-outline {
-  border: 2px solid #eeeeee;
+  border: 1px solid var(--light-color);
 }
 
 .btn-secondary:hover, .btn-outline:hover {
-  border: none;
+  border-color: var(--secondary-color);
 }
 
 .btn-outline {
-  border-color: #393e46;
+  border-color: var(--primary-color);
 }
 
 .btn-outline:hover {
-  color: #eeeeee;
-  background-color: #00adb5;
+  color: var(--light-color);
+  background-color: var(--secondary-color);
 }
 
 .btn-round {
@@ -440,7 +447,7 @@ span {
 }
 
 .card {
-  max-width: 30rem;
+  max-width: 40vw;
   -webkit-box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
           box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   border-radius: 0.5rem;
@@ -448,8 +455,8 @@ span {
 }
 
 .card__image {
-  max-width: 10rem;
-  padding: 0.7rem;
+  max-width: 14vw;
+  padding: 0.5rem;
 }
 
 .card__image--col {
@@ -457,7 +464,7 @@ span {
 }
 
 .card__content {
-  max-width: 19rem;
+  max-width: 22.5vw;
 }
 
 .card__content--col {
@@ -475,7 +482,7 @@ span {
 }
 
 .card__icon:hover {
-  color: #00adb5;
+  color: var(--secondary-color);
 }
 
 .card__icon--col {
@@ -490,7 +497,7 @@ span {
 }
 
 .card--col {
-  max-width: 15rem;
+  max-width: 17vw;
   min-height: 80vh;
   padding: 0.7rem 1rem;
 }
@@ -501,14 +508,14 @@ span {
 
 .input {
   padding: 0.3rem 0.2rem;
-  border: 1px solid #393e46;
-  outline: 1px solid #393e46;
-  color: #393e46;
+  border: 1px solid var(--primary-color);
+  outline: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .input-label {
   margin: 0.5rem 0;
-  color: #393e46;
+  color: var(--primary-color);
 }
 
 .input-required {
@@ -521,8 +528,8 @@ span {
 }
 
 .input:focus {
-  border-color: #00adb5;
-  outline-color: #00adb5;
+  border-color: var(--secondary-color);
+  outline-color: var(--secondary-color);
 }
 
 .list {
@@ -560,20 +567,30 @@ span {
   padding: 0.5rem;
   font-size: 1.2rem;
   outline: 1px solid #4B5563;
-  color: #222831;
+  color: var(--dark-color);
 }
 
 .search-bar__input:focus {
-  outline-color: #00adb5;
-  border-color: #00adb5;
+  outline-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .search-bar__icon {
+  cursor: pointer;
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
   font-size: 1.5rem;
-  color: #00adb5;
+  color: var(--secondary-color);
+}
+
+.modal-close {
+  border: none;
+  font-size: 2rem;
+}
+
+.modal-close:hover {
+  color: var(--secondary-color);
 }
 
 .bg-primary {

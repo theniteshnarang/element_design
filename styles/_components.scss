@@ -1,20 +1,20 @@
 // Avatar Component
 .avatar {
-    border: 1px solid $primaryColor;
+    border: 1px solid var(--primary-color);
     border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 6vw;
+    height: 6vw;
     &--badge {
-        width: 1rem;
-        height: 1rem;
+        width: 1vw;
+        height: 1vw;
         position: absolute;
-        bottom: 0.4rem;
-        right: 1rem;
+        bottom: 0.6vw;
+        right: 1vw;
     }
     &--text {
         font-size: 3rem;
         padding: 0.6rem;
-        color: $lightColor;
+        color: var(--light-color);
     }
 }
 
@@ -22,8 +22,8 @@
 .alert {
     border-radius: 0.3rem;
     max-width: 30vw;
-    color: $lightColor;
-    height: 2.8rem;
+    color: var(--light-color);
+    height: 6.5vh;
     &--cross {
         position: absolute;
         font-size: 1.7rem;
@@ -32,7 +32,7 @@
         cursor: pointer;
         margin-top: -0.3rem;
         &:hover {
-            color: $primaryColor;
+            color: var(--primary-color);
         }
     }
 }
@@ -53,34 +53,34 @@
     letter-spacing: 0.09375rem;
     border: none;
     &-primary {
-        color: $primaryColor;
-        background-color: $lightColor;
+        color: var(--primary-color);
+        background-color: var(--light-color);
         &:hover {
-            color: $darkColor;
+            color: var(--dark-color);
             background-color: $gray-300;
         }
     }
     &-secondary,
     &-solid {
-        color: $lightColor;
-        background-color: $primaryColor;
+        color: var(--light-color);
+        background-color: var(--primary-color);
         &:hover {
-            color: $darkColor;
-            background-color: $secondaryColor;
+            color: var(--dark-color);
+            background-color: var(--secondary-color);
         }
     }
     &-secondary,
     &-outline {
-        border: 2px solid $lightColor;
+        border: 1px solid var(--light-color);
         &:hover {
-            border: none;
+            border-color: var(--secondary-color);
         }
     }
     &-outline {
-        border-color: $primaryColor;
+        border-color: var(--primary-color);
         &:hover {
-            color: $lightColor;
-            background-color: $secondaryColor;
+            color: var(--light-color);
+            background-color: var(--secondary-color);
         }
     }
     &-round {
@@ -96,19 +96,19 @@
 
 // Card Component
 .card {
-    max-width: 30rem;
+    max-width: 40vw;
     box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     border-radius: 0.5rem;
     padding: 0.5rem;
     &__image {
-        max-width: 10rem;
-        padding: 0.7rem;
+        max-width: 14vw;
+        padding: 0.5rem;
         &--col {
             max-width: 100%;
         }
     }
     &__content {
-        max-width: 19rem;
+        max-width: 22.5vw;
         &--col {
             min-height: 35vh;
         }
@@ -121,7 +121,7 @@
         font-size: 1.3em;
         margin-right: 0.5rem;
         &:hover {
-            color: $secondaryColor;
+            color: var(--secondary-color);
         }
         &--col {
             position: absolute;
@@ -134,7 +134,7 @@
         font-size: 0.75em;
     }
     &--col {
-        max-width: 15rem;
+        max-width: 17vw;
         min-height: 80vh;
         padding: 0.7rem 1rem;
     }
@@ -148,12 +148,12 @@
 
 .input {
     padding: 0.3rem 0.2rem;
-    border: 1px solid $primaryColor;
-    outline: 1px solid $primaryColor;
-    color: $primaryColor;
+    border: 1px solid var(--primary-color);
+    outline: 1px solid var(--primary-color);
+    color: var(--primary-color);
     &-label {
         margin: 0.5rem 0;
-        color: $primaryColor;
+        color: var(--primary-color);
     }
     &-required {
         margin-top: 0.5rem;
@@ -163,8 +163,8 @@
         outline-color: $red-500;
     }
     &:focus {
-        border-color: $secondaryColor;
-        outline-color: $secondaryColor;
+        border-color: var(--secondary-color);
+        outline-color: var(--secondary-color);
     }
 }
 
@@ -197,17 +197,28 @@
         padding: 0.5rem;
         font-size: 1.2rem;
         outline: 1px solid $gray-600;
-        color: $darkColor;
+        color: var(--dark-color);
         &:focus {
-            outline-color: $secondaryColor;
-            border-color: $secondaryColor;
+            outline-color: var(--secondary-color);
+            border-color: var(--secondary-color);
         }
     }
     &__icon {
+        cursor: pointer;
         position: absolute;
         top: 0.5rem;
         right: 0.5rem;
         font-size: 1.5rem;
-        color: $secondaryColor;
+        color: var(--secondary-color);
+    }
+}
+
+.modal {
+    &-close {
+        border: none;
+        font-size: 2rem;
+        &:hover {
+            color: var(--secondary-color);
+        }
     }
 }
