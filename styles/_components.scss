@@ -12,7 +12,7 @@
         right: 1vw;
     }
     &--text {
-        font-size: 3rem;
+        font-size: 3.3rem;
         padding: 0.6rem;
         color: var(--light-color);
     }
@@ -79,7 +79,6 @@
     &-outline {
         border-color: var(--primary-color);
         &:hover {
-            color: var(--light-color);
             background-color: var(--secondary-color);
         }
     }
