@@ -309,6 +309,10 @@ span {
   height: 115vh;
 }
 
+.main__content--navigation {
+  height: 85vh;
+}
+
 .main__desc--layout {
   height: 45vh;
   margin-bottom: 1rem;
@@ -588,6 +592,10 @@ span {
   background-color: #BFDBFE;
 }
 
+.search-bar {
+  max-height: 7vh;
+}
+
 .search-bar__input {
   width: 100%;
   padding: 0.5rem;
@@ -653,6 +661,10 @@ span {
   position: absolute;
   top: -1.7vh;
   right: 1.8vw;
+}
+
+.navigation {
+  min-height: 10vh;
 }
 
 .bg-primary {

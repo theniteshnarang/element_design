@@ -97,8 +97,10 @@
             height: 60vh;
         }
         &--modal {
-            // z-index: -1;
             height: 115vh;
+        }
+        &--navigation {
+            height: 85vh;
         }
     }
     &__desc--layout {
