@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" sizes="16*16" href="../data/img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../data/img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./../styles/style.css">
     <title>Element Design | Layout</title>
 </head>
@@ -36,19 +36,19 @@
                     <p>Flex property is most commonly used for layout designing.</p>
                     <strong>How to use it in your div?</strong>
                     <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253C%21--%2520for%2520horizontal%2520main%2520axis%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522flex%2522%253E%253C%252Fdiv%253E%250A%250A%253C%21--%2520for%2520vertical%2520main%2520axis%2520--%253E%250A%2520%250A%253Cdiv%2520class%253D%2522flex%2520flex--column%2522%253E%253C%252Fdiv%253E"
-                        style="width: 1000px; height: 165px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+                        style="width: 1000px; height: 165px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts ">
                     </iframe>
                 </div>
                 <div class="main__content main__content--layout">
                     <h3 class="mb-1">1. Horizontal layout</h3>
                     <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253C%21--%2520Spaced%2520between%2520along%2520the%2520items%2520in%2520the%2520row%2520main%28horizontal%29%2520axis%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522flex%2520flex--justify_between%2522%253E%253C%252Fdiv%253E%250A%250A%253C%21--%2520Spaced%2520centered%2520along%2520the%2520items%2520in%2520the%2520row%2520main%28horizontal%29%2520axis%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522flex%2520flex--justify_center%2522%253E%253C%252Fdiv%253E%250A%250A%253C%21--%2520Spaced%2520around%2520along%2520the%2520items%2520in%2520the%2520row%2520main%28horizontal%29%2520axis%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522flex%2520flex--justify_around%2522%253E%253C%252Fdiv%253E%250A%250A%253C%21--%2520Spaced%2520centered%2520along%2520the%2520items%2520in%2520the%2520row%2520cross%2520axis%28vertical%29%2520axis%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522flex%2520flex--align_center%2522%253E%253C%252Fdiv%253E%250A%250A%253C%21--%2520Spaced%2520centered%2520along%2520the%2520items%2520in%2520the%2520row%2520main%28horizontal%29%2520and%2520cross%28vertical%29%2520axis%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522flex%2520flex--center%2522%253E%253C%252Fdiv%253E"
-                        style="width: 1000px; height: 400px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+                        style="width: 1000px; height: 400px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts ">
                     </iframe>
                 </div>
                 <div class="main__content main__content--layout">
                     <h3 class="mb-1">2. Vertical layout</h3>
                     <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253C%21--%2520Spaced%2520between%2520along%2520the%2520items%2520in%2520the%2520column%2520main%28vertical%29%2520axis%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522flex%2520flex--column%2520flex--justify_between%2522%253E%253C%252Fdiv%253E%250A%250A%253C%21--%2520Spaced%2520centered%2520along%2520the%2520items%2520in%2520the%2520column%2520main%28vertical%29%2520axis%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522flex%2520flex--column%2520flex--justify_center%2522%253E%253C%252Fdiv%253E%250A%250A%253C%21--%2520Spaced%2520around%2520along%2520the%2520items%2520in%2520the%2520column%2520main%28vertical%29%2520axis%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522flex%2520flex--column%2520flex--justify_around%2522%253E%253C%252Fdiv%253E%250A%250A%253C%21--%2520Spaced%2520centered%2520along%2520the%2520items%2520in%2520the%2520column%2520cross%2520axis%28horizontal%29%2520axis%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522flex%2520flex--column%2520flex--align_center%2522%253E%253C%252Fdiv%253E%250A%250A%253C%21--%2520Spaced%2520centered%2520along%2520the%2520items%2520in%2520the%2520column%2520main%28vertical%29%2520and%2520cross%28horizontal%29%2520axis%2520--%253E%250A%250A%253Cdiv%2520class%253D%2522flex%2520flex--column%2520flex--center%2522%253E%253C%252Fdiv%253E "
-                        style="width: 1000px; height: 400px; border:0; transform: scale(1); overflow:hidden; " sandbox="allow-scripts allow-same-origin ">
+                        style="width: 1000px; height: 400px; border:0; transform: scale(1); overflow:hidden; " sandbox="allow-scripts  ">
                     </iframe>
                 </div>
             </div>

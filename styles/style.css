@@ -603,14 +603,15 @@ span {
 
 .search-bar__input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.4rem;
   font-size: 1.2rem;
-  outline: 1px solid #4B5563;
   color: var(--dark-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0.3rem;
 }
 
 .search-bar__input:focus {
-  outline-color: var(--secondary-color);
+  outline: thin dotted var(--secondary-color);
   border-color: var(--secondary-color);
 }
 
@@ -619,7 +620,7 @@ span {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--secondary-color);
 }
 
@@ -678,6 +679,10 @@ span {
 
 .bg-secondary {
   background-color: #00adb5;
+}
+
+.bg-dark {
+  background-color: #222831;
 }
 
 .bg-success {
@@ -750,6 +755,10 @@ span {
 
 .color-light {
   color: #eeeeee;
+}
+
+.color-dark {
+  color: #222831;
 }
 
 .color-success {

@@ -6,6 +6,9 @@
     &-secondary {
         background-color: $secondaryColor;
     }
+    &-dark {
+        background-color: $darkColor;
+    }
     &-success {
         background-color: $green-600;
     }
@@ -66,6 +69,9 @@
     }
     &-light {
         color: $lightColor;
+    }
+    &-dark {
+        color: $darkColor;
     }
     &-success {
         color: $green-600;
