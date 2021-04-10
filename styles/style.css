@@ -280,11 +280,11 @@ span {
 }
 
 .main__content--cards {
-  height: 80vh;
+  height: 95vh;
 }
 
 .main__content--cards-vertical {
-  height: 140vh;
+  height: 130vh;
 }
 
 .main__content--images {
@@ -486,28 +486,38 @@ span {
   -webkit-box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
           box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   border-radius: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.7rem;
+}
+
+.card--col {
+  max-width: 20vw;
+  min-height: 77vh;
 }
 
 .card__image {
-  max-width: 14vw;
-  padding: 0.5rem;
-}
-
-.card__image--col {
   max-width: 100%;
-}
-
-.card__content {
-  max-width: 22.5vw;
-}
-
-.card__content--col {
-  min-height: 35vh;
+  max-height: 100%;
 }
 
 .card__header {
-  min-width: 100%;
+  max-width: 35%;
+}
+
+.card__header--col {
+  max-width: 80%;
+  min-height: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.card__content {
+  max-width: 60%;
+}
+
+.card__content--col {
+  max-width: 100%;
+  min-height: 40%;
 }
 
 .card__icon {
@@ -529,12 +539,6 @@ span {
 .card__strike {
   text-decoration: line-through;
   font-size: 0.75em;
-}
-
-.card--col {
-  max-width: 17vw;
-  min-height: 80vh;
-  padding: 0.7rem 1rem;
 }
 
 .image--rounded {
@@ -642,7 +646,7 @@ span {
 
 .modal-body {
   min-height: 15vh;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #D1D5DB;
   border-left: 0;
   border-right: 0;
 }
@@ -915,6 +919,10 @@ span {
 
 .mt-3 {
   margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
 }
 
 .mr-1 {
