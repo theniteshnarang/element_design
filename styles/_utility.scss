@@ -1,13 +1,16 @@
 // Coloured Background
 .bg {
     &-primary {
-        background-color: $primaryColor;
+        background-color: var(--primary-color);
     }
     &-secondary {
-        background-color: $secondaryColor;
+        background-color: var(--secondary-color);
     }
     &-dark {
-        background-color: $darkColor;
+        background-color: var(--dark-color);
+    }
+    &-light {
+        background-color: var(--light-color);
     }
     &-success {
         background-color: $green-600;
@@ -62,16 +65,16 @@
 
 .color {
     &-primary {
-        color: $primaryColor;
+        color: var(--primary-color);
     }
     &-secondary {
-        color: $secondaryColor;
+        color: var(--secondary-color);
     }
     &-light {
-        color: $lightColor;
+        color: var(--light-color);
     }
     &-dark {
-        color: $darkColor;
+        color: var(--dark-color);
     }
     &-success {
         color: $green-600;
@@ -291,7 +294,11 @@
     overflow: hidden;
 }
 
+.text-left {
+    text-align: left;
+}
+
 .active {
-    color: $secondaryColor;
+    color: var(--secondary-color);
     font-weight: bold;
 }

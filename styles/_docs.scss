@@ -13,9 +13,7 @@
                 margin-left: -8.5rem;
             }
         }
-        &--avatar {
-            height: 210vh;
-        }
+        &--avatar,
         &--alert {
             height: 210vh;
         }
@@ -25,14 +23,12 @@
         &--button {
             height: 115vh;
         }
-        &--cards {
+        &--cards,
+        &--lists {
             height: 250vh;
         }
         &--images {
             height: 140vh;
-        }
-        &--lists {
-            height: 250vh;
         }
         &--rating,
         &--search_bar {
@@ -78,7 +74,8 @@
                 height: 130vh;
             }
         }
-        &--images {
+        &--images,
+        &--rating {
             height: 60vh;
         }
         &--inputs {
@@ -88,9 +85,6 @@
         &--lists {
             max-width: 40vw;
             height: 110vh;
-        }
-        &--rating {
-            height: 60vh;
         }
         &--search_bar {
             max-width: 40vw;
