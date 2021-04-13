@@ -103,6 +103,9 @@
         padding: 0.5rem 1rem;
         text-decoration: none;
     }
+    &:hover {
+        cursor: pointer;
+    }
     &:focus {
         outline: thin dotted;
     }
@@ -113,10 +116,11 @@
     max-width: 40vw;
     box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     border-radius: 0.5rem;
-    padding: 0.7rem;
+    padding: 1rem;
     &--col {
         max-width: 20vw;
         min-height: 77vh;
+        padding: 1rem 1.2rem;
     }
     &__image {
         max-width: 100%;
@@ -126,7 +130,7 @@
         max-width: 35%;
         &--col {
             max-width: 80%;
-            min-height: 60%;
+            min-height: 55%;
             align-self: center;
         }
     }
@@ -134,7 +138,7 @@
         max-width: 60%;
         &--col {
             max-width: 100%;
-            min-height: 40%;
+            min-height: 45%;
         }
     }
     &__icon {

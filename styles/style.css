@@ -464,6 +464,10 @@ span {
   text-decoration: none;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .btn:focus {
   outline: thin dotted;
 }
@@ -473,12 +477,13 @@ span {
   -webkit-box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
           box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   border-radius: 0.5rem;
-  padding: 0.7rem;
+  padding: 1rem;
 }
 
 .card--col {
   max-width: 20vw;
   min-height: 77vh;
+  padding: 1rem 1.2rem;
 }
 
 .card__image {
@@ -492,7 +497,7 @@ span {
 
 .card__header--col {
   max-width: 80%;
-  min-height: 60%;
+  min-height: 55%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -504,7 +509,7 @@ span {
 
 .card__content--col {
   max-width: 100%;
-  min-height: 40%;
+  min-height: 45%;
 }
 
 .card__icon {
@@ -1002,6 +1007,10 @@ span {
 
 .hide-scroll {
   overflow: hidden;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .active {
