@@ -473,7 +473,7 @@ span {
 }
 
 .card {
-  max-width: 40vw;
+  max-width: 60%;
   -webkit-box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
           box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   border-radius: 0.5rem;
@@ -481,17 +481,17 @@ span {
 }
 
 .card--col {
-  max-width: 20vw;
-  min-height: 77vh;
-  padding: 1rem 1.2rem;
+  max-width: 35%;
+  max-height: 60%;
+  padding: 1rem 1.5rem;
 }
 
 .card__image {
   max-width: 100%;
   max-height: 100%;
   border-radius: 0.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .card__header {
@@ -499,8 +499,8 @@ span {
 }
 
 .card__header--col {
-  max-width: 80%;
-  min-height: 55%;
+  max-width: 100%;
+  min-height: 25%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
