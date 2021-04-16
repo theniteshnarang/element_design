@@ -13,6 +13,30 @@
     --secondary-color: #{$secondaryColor};
     --dark-color: #{$darkColor};
     --light-color: #{$lightColor};
+    --success-color: #{$green-600};
+    --error-color: #{$red-600};
+    --warning-color: #{$yellow-600};
+    --info-color: #{$blue-600};
+    --blue-200: #{$blue-200};
+    --blue-300: #{$blue-300};
+    --blue-500: #{$blue-500};
+    --yellow-200: #{$yellow-200};
+    --yellow-300: #{$yellow-300};
+    --yellow-400: #{$yellow-400};
+    --yellow-500: #{$yellow-500};
+    --red-200: #{$red-200};
+    --red-300: #{$red-300};
+    --red-400: #{$red-400};
+    --red-500: #{$red-500};
+    --green-200: #{$green-200};
+    --green-300: #{$green-300};
+    --green-500: #{$green-500};
+    --gray-50: #{$gray-50};
+    --gray-100: #{$gray-100};
+    --gray-200: #{$gray-200};
+    --gray-300: #{$gray-300};
+    --gray-400: #{$gray-400};
+    --gray-500: #{$gray-500};
 }
 
 body {
