@@ -85,6 +85,9 @@ span {
         @include tablet {
             max-width: 90vw;
         }
+        @include smphone {
+            max-width: 97vw;
+        }
     }
     &__list {
         min-width: 18vw;
@@ -154,11 +157,11 @@ span {
             max-width: 100vw;
             // height: 25vh;
         }
+        @include smphone {
+            height: 50vh;
+        }
         @include phone {
             padding: 0 1rem;
-        }
-        @include smphone {
-            padding: 0 0.5rem;
         }
     }
     &__brand__logo {
@@ -190,6 +193,21 @@ span {
         }
         @include smphone {
             font-size: 0.75rem;
+        }
+    }
+    &__action {
+        &--download {
+            margin-left: 1rem;
+            @include smphone {
+                margin: 0;
+            }
+        }
+        @include smphone {
+            height: 13vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // height: 15vh;
         }
     }
 }
