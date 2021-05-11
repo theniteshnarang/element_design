@@ -34,10 +34,10 @@ $blue-300:#93C5FD;
 $blue-500:#3B82F6;
 $blue-600:#2563EB;
 // sizes
-$tablet: 768px;
-$phone: 510px;
-$smphone: 425px;
-$vsmphone: 400px;
+$tablet: 750px;
+$phone: 500px;
+$smphone: 390px;
+$vsmphone: 345px;
 // media queries defination in scss.
 @mixin tablet {
     @media only screen and (max-width: $tablet) {

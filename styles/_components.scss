@@ -52,6 +52,10 @@
     font-size: 0.875rem;
     letter-spacing: 0.09375rem;
     border: none;
+    @include smphone {
+        font-size: 0.7rem;
+        line-height: 1.5;
+    }
     &-primary {
         color: var(--primary-color);
         background-color: var(--light-color);

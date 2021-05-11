@@ -142,8 +142,14 @@
     &--justify_around {
         justify-content: space-around;
     }
+    &--justify_evenly {
+        justify-content: space-evenly;
+    }
     &--align_start {
         align-items: flex-start;
+    }
+    &--align_end {
+        align-items: flex-end;
     }
     &--justify_end {
         justify-content: flex-end;
