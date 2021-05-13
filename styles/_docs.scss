@@ -15,7 +15,7 @@ iframe {
     &__section {
         height: 100vh;
         max-width: 58vw;
-        margin: 6rem auto 0 7.35rem;
+        margin: 4rem auto 0 7.35rem;
         text-align: left;
         @include tablet {
             margin-left: 1rem;
@@ -28,8 +28,13 @@ iframe {
         }
         &--layout {
             height: 200vh;
-            iframe {
-                margin-left: -8.5rem;
+            @include tablet {
+                height: 220vh;
+                margin-top: 5rem;
+                max-width: 90vw;
+            }
+            @include phone {
+                height: 180vh;
             }
         }
         &--avatar,
@@ -61,6 +66,12 @@ iframe {
         height: 30vh;
         &--layout {
             height: 65vh;
+            @include tablet {
+                height: 75vh;
+            }
+            @include phone {
+                height: 80vh;
+            }
         }
         &--avatar {
             height: 60vh;

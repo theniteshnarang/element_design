@@ -6,7 +6,7 @@ const menu = document.querySelector('#menu')
 const components = document.querySelector('#components')
 modalOpen?.addEventListener('click', toggleModal)
 
-menu.addEventListener('click', toggleComponents)
+menu?.addEventListener('click', toggleComponents)
 
 modalClose.forEach( close => close.addEventListener('click', toggleModal))
 
