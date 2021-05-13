@@ -71,6 +71,10 @@
 .badge {
     padding: 0.3rem 0.8rem;
     border-radius: 0.3rem;
+    &-container {
+        flex-wrap: wrap;
+        gap: 0.5rem
+    }
 }
 
 // Button Component
@@ -160,10 +164,31 @@
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     padding: 1rem;
+    @include tablet {
+        max-width: 80%;
+    }
+    @include phone {
+        max-width: 90%;
+    }
+    @include smphone {
+        max-width: 97%;
+    }
     &--col {
         max-width: 35%;
         max-height: 60%;
         padding: 1rem 1.5rem;
+        @include tablet {
+            max-width: 45%;
+        }
+        @include phone {
+            max-width: 60%;
+        }
+        @include smphone {
+            max-width: 80%;
+        }
+        @include vsmphone {
+            max-width: 75%;
+        }
     }
     &__image {
         max-width: 100%;

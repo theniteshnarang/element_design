@@ -527,7 +527,7 @@ span {
 }
 
 .main__section--cards, .main__section--lists {
-  height: 250vh;
+  height: 300vh;
 }
 
 .main__section--images {
@@ -595,11 +595,11 @@ span {
 }
 
 .main__content--cards {
-  height: 95vh;
+  height: 120vh;
 }
 
 .main__content--cards-vertical {
-  height: 130vh;
+  height: 156vh;
 }
 
 .main__content--images, .main__content--rating {
@@ -831,6 +831,12 @@ span {
   border-radius: 0.3rem;
 }
 
+.badge-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .btn {
   padding: 0.3rem 1rem;
   line-height: 2;
@@ -940,10 +946,52 @@ span {
   padding: 1rem;
 }
 
+@media only screen and (max-width: 750px) {
+  .card {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .card {
+    max-width: 97%;
+  }
+}
+
 .card--col {
   max-width: 35%;
   max-height: 60%;
   padding: 1rem 1.5rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .card--col {
+    max-width: 45%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card--col {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .card--col {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .card--col {
+    max-width: 75%;
+  }
 }
 
 .card__image {
