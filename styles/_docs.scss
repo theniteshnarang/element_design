@@ -55,6 +55,9 @@ iframe {
                 height: 120vh;
             }
         }
+        &--inputs {
+            height: 115vh;
+        }
         &--cards,
         &--lists {
             height: 300vh;
@@ -114,7 +117,10 @@ iframe {
         }
         &--inputs {
             height: 50vh;
-            max-width: 17vw;
+            max-width: 60vw;
+            @include tablet {
+                max-width: 99%;
+            }
         }
         &--lists {
             max-width: 40vw;

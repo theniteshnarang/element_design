@@ -163,7 +163,7 @@
     background-color: $gray-50;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     @include tablet {
         max-width: 80%;
     }
@@ -171,12 +171,12 @@
         max-width: 90%;
     }
     @include smphone {
-        max-width: 97%;
+        max-width: 99%;
     }
     &--col {
         max-width: 35%;
         max-height: 60%;
-        padding: 1rem 1.5rem;
+        padding: 0rem 0 0.8rem;
         @include tablet {
             max-width: 45%;
         }
@@ -187,7 +187,7 @@
             max-width: 80%;
         }
         @include vsmphone {
-            max-width: 75%;
+            max-width: 85%;
         }
     }
     &__image {
@@ -205,10 +205,11 @@
         }
     }
     &__content {
-        max-width: 60%;
+        max-width: 63%;
         &--col {
+            padding: 0 1rem;
             max-width: 100%;
-            min-height: 45%;
+            min-height: 38%;
         }
     }
     &__icon {
@@ -249,6 +250,15 @@
     }
     &-required {
         margin-top: 0.5rem;
+    }
+    &-container {
+        max-width: 50%;
+        @include smphone {
+            max-width: 60%;
+        }
+        @include vsmphone {
+            max-width: 70%;
+        }
     }
     &--error {
         border-color: $red-600;
