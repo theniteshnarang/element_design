@@ -45,9 +45,15 @@ iframe {
         }
         &--badge {
             height: 60vh;
+            @include phone {
+                height: 70vh;
+            }
         }
         &--button {
             height: 115vh;
+            @include tablet {
+                height: 120vh;
+            }
         }
         &--cards,
         &--lists {
@@ -86,9 +92,15 @@ iframe {
         }
         &--badge {
             height: 40vh;
+            @include phone {
+                height: 45vh;
+            }
         }
         &--button {
             height: 45vh;
+            @include tablet {
+                height: 50vh;
+            }
         }
         &--cards {
             height: 95vh;
@@ -132,6 +144,9 @@ iframe {
         margin-bottom: 1rem;
         @include smphone {
             font-size: 1.5rem;
+        }
+        @include vsmphone {
+            margin: 0.5rem 0;
         }
     }
     .footer {

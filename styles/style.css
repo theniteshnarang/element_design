@@ -510,8 +510,20 @@ span {
   height: 60vh;
 }
 
+@media only screen and (max-width: 500px) {
+  .main__section--badge {
+    height: 70vh;
+  }
+}
+
 .main__section--button {
   height: 115vh;
+}
+
+@media only screen and (max-width: 750px) {
+  .main__section--button {
+    height: 120vh;
+  }
 }
 
 .main__section--cards, .main__section--lists {
@@ -566,8 +578,20 @@ span {
   height: 40vh;
 }
 
+@media only screen and (max-width: 500px) {
+  .main__content--badge {
+    height: 45vh;
+  }
+}
+
 .main__content--button {
   height: 45vh;
+}
+
+@media only screen and (max-width: 750px) {
+  .main__content--button {
+    height: 50vh;
+  }
 }
 
 .main__content--cards {
@@ -623,6 +647,12 @@ span {
 @media only screen and (max-width: 390px) {
   .main__title {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .main__title {
+    margin: 0.5rem 0;
   }
 }
 
@@ -811,10 +841,16 @@ span {
   border: none;
 }
 
+@media only screen and (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
+
 @media only screen and (max-width: 390px) {
   .btn {
     font-size: 0.7rem;
-    line-height: 1.5;
   }
 }
 
@@ -826,6 +862,12 @@ span {
 .btn-primary:hover {
   color: var(--dark-color);
   background-color: #D1D5DB;
+}
+
+.btn-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .btn-secondary, .btn-solid {

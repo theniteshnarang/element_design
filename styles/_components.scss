@@ -82,10 +82,14 @@
     font-size: 0.875rem;
     letter-spacing: 0.09375rem;
     border: none;
-    @include smphone {
-        font-size: 0.7rem;
+    @include phone {
+        font-size: 0.8rem;
         line-height: 1.5;
     }
+    @include smphone {
+        font-size: 0.7rem;
+    }
+    @include vsmphone {}
     &-primary {
         color: var(--primary-color);
         background-color: var(--light-color);
@@ -93,6 +97,10 @@
             color: var(--dark-color);
             background-color: $gray-300;
         }
+    }
+    &-container {
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
     &-secondary,
     &-solid {

@@ -9,6 +9,7 @@
 
     <link rel="shortcut icon" href="../data/img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" integrity="sha512-kZqGbhf9JTB4bVJ0G8HCkqmaPcRgo88F0dneK30yku5Y/dep7CZfCnNml2Je/sY4lBoqoksXz4PtVXS4GHSUzQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
     <title>Element Design | Button</title>
 </head>
@@ -30,6 +31,14 @@
         </div>
     </header>
 
+    <div class="floating-action">
+        <svg id="menu" class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.5" x2="16" y2="1.5" stroke="white" stroke-width="3" />
+            <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" />
+            <line y1="21.5" x2="43" y2="21.5" stroke="white" stroke-width="3" />
+        </svg>
+    </div>
+
     <main class="main">
         <div class="main__wrapper">
             <div class="main__section main__section--button flex flex--column flex--justify_around">
@@ -38,25 +47,37 @@
                 <strong>There are types of Button: </strong>
                 <div class="main__content main__content--button flex flex--column flex--justify_around">
                     <h2>Solid</h2>
-                    <div class="ml-1">
-                        <button class="btn btn-solid mlr-1">Square</button>
+                    <div class="btn-container flex flex--justify_around">
+                        <button class="btn btn-solid">Square</button>
                         <button class="btn btn-solid btn-round">Rounded</button>
-                        <button class="btn btn-solid btn-round--corner mlr-1">Round Corner</button>
+                        <button class="btn btn-solid btn-round--corner">Round Corner</button>
                     </div>
-                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-solid%2522%253ESquare%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cbutton%2520class%253D%2522btn%2520btn-solid%2520btn-round%2522%253ERounded%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cbutton%2520class%253D%2522btn%2520btn-solid%2520btn-round--corner%2522%253ERound%2520Corner%253C%252Fbutton%253E"
-                        style="width: 731px; height: 139px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts ">
-                    </iframe>
+                    <pre>
+                        <code class="html">
+                            &lt;div>
+                                &lt;button class="btn btn-solid">Square&lt;/button>
+                                &lt;button class="btn btn-solid btn-round">Rounded&lt;/button>
+                                &lt;button class="btn btn-solid btn-round--corner">Round Corner&lt;/button>
+                            &lt;/div>
+                        </code>
+                    </pre>
                 </div>
                 <div class="main__content main__content--button flex flex--column flex--justify_around">
                     <h2>Outline</h2>
-                    <div class="ml-1">
-                        <button class="btn btn-outline mlr-1">Square</button>
+                    <div class="btn-container flex flex--justify_around">
+                        <button class="btn btn-outline">Square</button>
                         <button class="btn btn-outline btn-round">Rounded</button>
-                        <button class="btn btn-outline btn-round--corner mlr-1">Round Corner</button>
+                        <button class="btn btn-outline btn-round--corner">Round Corner</button>
                     </div>
-                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-outline%2522%253ESquare%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-round%2522%253ERounded%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline%2520btn-round--corner%2522%253ERound%2520Corner%253C%252Fbutton%253E"
-                        style="width: 731px; height: 139px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts ">
-                    </iframe>
+                    <pre>
+                        <code class="html">
+                            &lt;div>
+                                &lt;button class="btn btn-outline">Square&lt;/button>
+                                &lt;button class="btn btn-outline btn-round">Rounded&lt;/button>
+                                &lt;button class="btn btn-outline btn-round--corner">Round Corner&lt;/button>
+                            &lt;/div>
+                        </code>
+                    </pre>
                 </div>
             </div>
             <footer class="footer flex flex--justify_center ">
@@ -86,7 +107,7 @@
         </div>
     </main>
 
-    <aside class="components ">
+    <aside class="components" id="components">
         <ul class="components__list flex flex--column ">
             <li><a href="../docs.html ">Getting Started</a></li>
             <li><a href="../components/layout.html ">Layout</a></li>
@@ -105,7 +126,11 @@
             <li><a href="../components/typography.html">Typography</a></li>
         </ul>
     </aside>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../index.js"></script>
 </body>
 
 </html>
