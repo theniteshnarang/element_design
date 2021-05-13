@@ -19,6 +19,8 @@ iframe {
         text-align: left;
         @include tablet {
             margin-left: 1rem;
+            max-width: 90vw;
+            margin-top: 5rem;
         }
         @include vsmphone {
             margin-top: 3.5rem;
@@ -30,8 +32,6 @@ iframe {
             height: 200vh;
             @include tablet {
                 height: 220vh;
-                margin-top: 5rem;
-                max-width: 90vw;
             }
             @include phone {
                 height: 180vh;
@@ -39,7 +39,7 @@ iframe {
         }
         &--avatar,
         &--alert {
-            height: 210vh;
+            height: 160vh;
         }
         &--badge {
             height: 60vh;
@@ -74,13 +74,7 @@ iframe {
             }
         }
         &--avatar {
-            height: 60vh;
-            iframe {
-                margin-left: 0.5rem;
-            }
-            .main__content__img {
-                max-width: 6.5vw;
-            }
+            height: 45vh;
             span,
             p {
                 margin-left: 2rem;
@@ -125,6 +119,10 @@ iframe {
         }
         &--navigation {
             height: 85vh;
+        }
+        &__img {
+            max-width: 5rem;
+            max-height: 5rem;
         }
     }
     &__desc--layout {
