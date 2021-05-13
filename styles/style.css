@@ -439,11 +439,41 @@ span {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  iframe {
+    min-width: 430px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  iframe {
+    min-width: 330px;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  iframe {
+    min-width: 230px;
+  }
+}
+
 .main__section {
   height: 100vh;
   max-width: 58vw;
   margin: 6rem auto 0 7.35rem;
   text-align: left;
+}
+
+@media only screen and (max-width: 750px) {
+  .main__section {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .main__section {
+    margin-top: 3.5rem;
+  }
 }
 
 .main__section--docs {
@@ -572,8 +602,33 @@ span {
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 390px) {
+  .main__title {
+    font-size: 1.5rem;
+  }
+}
+
 .main .footer {
   height: 45vh;
+}
+
+.floating-action {
+  position: fixed;
+  border: 1px solid var(--light-color);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  left: 0;
+  bottom: 5vh;
+  z-index: 1;
+  background-color: var(--primary-color);
+  opacity: 0.7;
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .floating-action {
+    display: block;
+  }
 }
 
 .components {
@@ -591,6 +646,20 @@ span {
   font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 750px) {
+  .components {
+    display: none;
+    margin-right: 0;
+    min-width: 38vw;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .components {
+    min-width: 50vw;
+  }
+}
+
 .components__list {
   padding: 1rem 0 1rem 1.5rem;
   -webkit-box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -600,6 +669,10 @@ span {
 
 .components__list li {
   margin: 0.3rem 0;
+}
+
+.components-show {
+  display: block;
 }
 
 .avatar {
