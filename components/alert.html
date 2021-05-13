@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="../data/img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./../styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" integrity="sha512-kZqGbhf9JTB4bVJ0G8HCkqmaPcRgo88F0dneK30yku5Y/dep7CZfCnNml2Je/sY4lBoqoksXz4PtVXS4GHSUzQ==" crossorigin="anonymous" />
     <title>Element Design | Alert</title>
 </head>
 
@@ -30,6 +31,14 @@
         </div>
     </header>
 
+    <div class="floating-action">
+        <svg id="menu" class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.5" x2="16" y2="1.5" stroke="white" stroke-width="3" />
+            <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" />
+            <line y1="21.5" x2="43" y2="21.5" stroke="white" stroke-width="3" />
+        </svg>
+    </div>
+
     <main class="main">
         <div class="main__wrapper">
             <div class="main__section main__section--alert flex flex--column flex--justify_between">
@@ -42,9 +51,14 @@
                         This is a success alert.
                         <i class="bi bi-x alert--cross"></i>
                     </div>
-                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-success%2520flex%2520flex--center%2520pos-rel%2522%253E%250A%2520%2520%2509%250A%2520%2520%2509This%2520is%2520a%2520success%2520alert.%250A%2509%250A%2509%253Ci%2520class%253D%2522bi%2520bi-x%2520alert--cross%2522%253E%253C%252Fi%253E%250A%2520%2520%250A%253C%252Fdiv%253E"
-                        style="width: 731px; height: 165px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts">
-                    </iframe>
+                    <pre>
+                        <code class="html">
+                            &lt;div class="alert bg-success flex flex--center pos-rel">
+                                This is a success alert.
+                                &lt;i class="bi bi-x alert--cross">&lt;/i>
+                            &lt;/div>
+                        </code>
+                    </pre>
                 </div>
 
                 <div class="main__content main__content--alert flex flex--column flex--justify_around ">
@@ -53,9 +67,14 @@
                         This is a error alert.
                         <i class="bi bi-x alert--cross"></i>
                     </div>
-                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-error%2520flex%2520flex--center%2520pos-rel%2522%253E%250A%2520%2520%2509%250A%2520%2520%2509This%2520is%2520a%2520error%2520alert.%250A%2509%250A%2509%253Ci%2520class%253D%2522bi%2520bi-x%2520alert--cross%2522%253E%253C%252Fi%253E%250A%2520%2520%250A%253C%252Fdiv%253E"
-                        style="width: 731px; height: 165px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts">
-                    </iframe>
+                    <pre>
+                        <code class="html">
+                            &lt;div class="alert bg-error flex flex--center pos-rel">
+                                This is a error alert.
+                                &lt;i class="bi bi-x alert--cross">&lt;/i>
+                            &lt;/div>
+                        </code>
+                    </pre>
                 </div>
                 <div class="main__content main__content--alert flex flex--column flex--justify_around ">
                     <h2>Warning</h2>
@@ -63,9 +82,14 @@
                         This is a warning alert.
                         <i class="bi bi-x alert--cross"></i>
                     </div>
-                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-warning%2520flex%2520flex--center%2520pos-rel%2522%253E%250A%2520%2520%2509%250A%2520%2520%2509This%2520is%2520a%2520warning%2520alert.%250A%2509%250A%2509%253Ci%2520class%253D%2522bi%2520bi-x%2520alert--cross%2522%253E%253C%252Fi%253E%250A%2520%2520%250A%253C%252Fdiv%253E"
-                        style="width: 731px; height: 165px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts">
-                    </iframe>
+                    <pre>
+                        <code class="html">
+                            &lt;div class="alert bg-warning flex flex--center pos-rel">
+                                This is a warning alert.
+                                &lt;i class="bi bi-x alert--cross">&lt;/i>
+                            &lt;/div>
+                        </code>
+                    </pre>
                 </div>
                 <div class="main__content main__content--alert flex flex--column flex--justify_around ">
                     <h2>Info</h2>
@@ -73,9 +97,14 @@
                         This is a info alert.
                         <i class="bi bi-x alert--cross"></i>
                     </div>
-                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520bg-info%2520flex%2520flex--center%2520pos-rel%2522%253E%250A%2520%2520%2509%250A%2520%2520%2509This%2520is%2520a%2520info%2520alert.%250A%2509%250A%2509%253Ci%2520class%253D%2522bi%2520bi-x%2520alert--cross%2522%253E%253C%252Fi%253E%250A%2520%2520%250A%253C%252Fdiv%253E"
-                        style="width: 731px; height: 165px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts">
-                    </iframe>
+                    <pre>
+                        <code class="html">
+                            &lt;div class="alert bg-info flex flex--center pos-rel">
+                                This is a info alert.
+                                &lt;i class="bi bi-x alert--cross">&lt;/i>
+                            &lt;/div>
+                        </code>
+                    </pre>
                 </div>
             </div>
             <footer class="footer flex flex--justify_center ">
@@ -105,7 +134,7 @@
         </div>
     </main>
 
-    <aside class="components ">
+    <aside class="components" id="components">
         <ul class="components__list flex flex--column ">
             <li><a class="components__list__item" href="../docs.html ">Getting Started</a></li>
             <li><a class="components__list__item" href="../components/layout.html ">Layout</a></li>
@@ -124,7 +153,11 @@
             <li><a class="components__list__item" href="../components/typography.html">Typography</a></li>
         </ul>
     </aside>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../index.js"></script>
 </body>
 
 </html>

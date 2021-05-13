@@ -37,9 +37,11 @@ iframe {
                 height: 180vh;
             }
         }
-        &--avatar,
-        &--alert {
+        &--avatar {
             height: 160vh;
+        }
+        &--alert {
+            height: 200vh;
         }
         &--badge {
             height: 60vh;
@@ -75,10 +77,6 @@ iframe {
         }
         &--avatar {
             height: 45vh;
-            span,
-            p {
-                margin-left: 2rem;
-            }
         }
         &--alert {
             height: 50vh;
@@ -148,10 +146,14 @@ iframe {
     padding: 0.5rem;
     left: 0;
     bottom: 5vh;
+    cursor: pointer;
     z-index: 1;
     background-color: var(--primary-color);
     opacity: 0.7;
     display: none;
+    &:hover {
+        opacity: 0.9;
+    }
     @include tablet {
         display: block;
     }

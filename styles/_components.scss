@@ -42,6 +42,18 @@
     max-width: 30vw;
     color: var(--light-color);
     height: 6.5vh;
+    @include tablet {
+        max-width: 40vw;
+    }
+    @include phone {
+        max-width: 53vw;
+    }
+    @include smphone {
+        max-width: 66vw;
+    }
+    @include vsmphone {
+        max-width: 75vw;
+    }
     &--cross {
         position: absolute;
         font-size: 1.7rem;

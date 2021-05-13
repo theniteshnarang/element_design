@@ -498,8 +498,12 @@ span {
   }
 }
 
-.main__section--avatar, .main__section--alert {
+.main__section--avatar {
   height: 160vh;
+}
+
+.main__section--alert {
+  height: 200vh;
 }
 
 .main__section--badge {
@@ -548,11 +552,6 @@ span {
 
 .main__content--avatar {
   height: 45vh;
-}
-
-.main__content--avatar span,
-.main__content--avatar p {
-  margin-left: 2rem;
 }
 
 .main__content--alert {
@@ -638,10 +637,15 @@ span {
   padding: 0.5rem;
   left: 0;
   bottom: 5vh;
+  cursor: pointer;
   z-index: 1;
   background-color: var(--primary-color);
   opacity: 0.7;
   display: none;
+}
+
+.floating-action:hover {
+  opacity: 0.9;
 }
 
 @media only screen and (max-width: 750px) {
@@ -753,6 +757,30 @@ span {
   max-width: 30vw;
   color: var(--light-color);
   height: 6.5vh;
+}
+
+@media only screen and (max-width: 750px) {
+  .alert {
+    max-width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .alert {
+    max-width: 53vw;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .alert {
+    max-width: 66vw;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .alert {
+    max-width: 75vw;
+  }
 }
 
 .alert--cross {
