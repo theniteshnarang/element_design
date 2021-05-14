@@ -54,9 +54,6 @@ h1 {
 
 ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 ul li a {
@@ -539,7 +536,7 @@ span {
 }
 
 .main__section--images {
-  height: 140vh;
+  height: 130vh;
 }
 
 .main__section--rating, .main__section--search_bar {
@@ -610,7 +607,11 @@ span {
   height: 156vh;
 }
 
-.main__content--images, .main__content--rating {
+.main__content--images {
+  height: 70vh;
+}
+
+.main__content--rating {
   height: 60vh;
 }
 
@@ -630,7 +631,6 @@ span {
 }
 
 .main__content--search_bar {
-  max-width: 40vw;
   height: 60vh;
 }
 
@@ -665,7 +665,7 @@ span {
 
 @media only screen and (max-width: 345px) {
   .main__title {
-    margin: 0.5rem 0;
+    margin: 0.7rem 0;
   }
 }
 
@@ -1156,6 +1156,19 @@ span {
 
 .search-bar {
   max-height: 7vh;
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  .search-bar {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .search-bar {
+    max-width: 67%;
+  }
 }
 
 .search-bar__input {
@@ -1165,6 +1178,12 @@ span {
   color: var(--dark-color);
   border: 1px solid var(--primary-color);
   border-radius: 0.3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .search-bar__input {
+    font-size: 1rem;
+  }
 }
 
 .search-bar__input:focus {
@@ -1181,6 +1200,12 @@ span {
   color: var(--secondary-color);
 }
 
+@media only screen and (max-width: 500px) {
+  .search-bar__icon {
+    top: 0.4rem;
+  }
+}
+
 .modal {
   position: fixed;
   width: 100vw;
@@ -1195,6 +1220,30 @@ span {
   border-radius: 0.3rem;
   width: 40vw;
   background-color: white;
+}
+
+@media only screen and (max-width: 750px) {
+  .modal-content {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .modal-content {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .modal-content {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .modal-content {
+    width: 95vw;
+  }
 }
 
 .modal-body {
@@ -1226,8 +1275,20 @@ span {
   right: 1.8vw;
 }
 
+@media only screen and (max-width: 500px) {
+  .modal-btn {
+    top: -0.5vh;
+  }
+}
+
 .navigation {
   min-height: 10vh;
+}
+
+.navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .bg-primary {

@@ -65,7 +65,7 @@ iframe {
             height: 240vh;
         }
         &--images {
-            height: 140vh;
+            height: 130vh;
         }
         &--rating,
         &--search_bar {
@@ -113,7 +113,9 @@ iframe {
                 height: 156vh;
             }
         }
-        &--images,
+        &--images {
+            height: 70vh;
+        }
         &--rating {
             height: 60vh;
         }
@@ -128,7 +130,6 @@ iframe {
             height: 110vh;
         }
         &--search_bar {
-            max-width: 40vw;
             height: 60vh;
         }
         &--modal {
@@ -153,7 +154,7 @@ iframe {
             font-size: 1.5rem;
         }
         @include vsmphone {
-            margin: 0.5rem 0;
+            margin: 0.7rem 0
         }
     }
     .footer {

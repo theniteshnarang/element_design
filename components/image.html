@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <link rel="shortcut icon" href="../data/img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" integrity="sha512-kZqGbhf9JTB4bVJ0G8HCkqmaPcRgo88F0dneK30yku5Y/dep7CZfCnNml2Je/sY4lBoqoksXz4PtVXS4GHSUzQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
     <title>Element Design | Images</title>
 </head>
@@ -30,6 +29,14 @@
         </div>
     </header>
 
+    <div class="floating-action">
+        <svg id="menu" class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.5" x2="16" y2="1.5" stroke="white" stroke-width="3" />
+            <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" />
+            <line y1="21.5" x2="43" y2="21.5" stroke="white" stroke-width="3" />
+        </svg>
+    </div>
+
     <main class="main">
         <div class="main__wrapper">
             <div class="main__section main__section--images flex flex--column flex--justify_between">
@@ -38,18 +45,21 @@
                 <div class="main__content main__content--images flex flex--column flex--justify_around flex--align_start">
                     <h2>Square Image</h2>
                     <img class="image ml-2" src="https://via.placeholder.com/150" alt="square-image">
-                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522image%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F150%2522%2520alt%253D%2522square-image%2522%252F%253E"
-                        style="width: 731px; height: 100px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts ">
-                    </iframe>
+                    <pre>
+                        <code class="html">
+                            &lt;img class="image ml-2" src="https://via.placeholder.com/150" alt="square-image">
+                        </code>
+                    </pre>
                 </div>
                 <div class="main__content main__content--images flex flex--column flex--justify_around flex--align_start">
                     <h2>Rounded Image</h2>
                     <img class="image--rounded ml-2" src="https://via.placeholder.com/150" alt="square-image">
-                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522image--rounded%2522%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F150%2522%2520alt%253D%2522square-image%2522%253E"
-                        style="width: 731px; height: 100px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts ">
-                    </iframe>
+                    <pre>
+                        <code>
+                            &lt;img class="image--rounded ml-2" src="https://via.placeholder.com/150" alt="square-image">
+                        </code>
+                    </pre>
                 </div>
-
             </div>
             <footer class="footer flex flex--justify_center ">
                 <div class="footer__wrapper ">
@@ -78,7 +88,7 @@
         </div>
     </main>
 
-    <aside class="components ">
+    <aside class="components" id="components">
         <ul class="components__list flex flex--column ">
             <li><a href="../docs.html ">Getting Started</a></li>
             <li><a href="../components/layout.html ">Layout</a></li>
@@ -97,7 +107,11 @@
             <li><a href="../components/typography.html">Typography</a></li>
         </ul>
     </aside>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../index.js"></script>
 </body>
 
 </html>
