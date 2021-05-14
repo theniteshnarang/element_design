@@ -530,8 +530,12 @@ span {
   height: 115vh;
 }
 
-.main__section--cards, .main__section--lists {
+.main__section--cards {
   height: 300vh;
+}
+
+.main__section--lists {
+  height: 240vh;
 }
 
 .main__section--images {
@@ -622,7 +626,6 @@ span {
 }
 
 .main__content--lists {
-  max-width: 40vw;
   height: 110vh;
 }
 
@@ -954,6 +957,9 @@ span {
           box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   padding: 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media only screen and (max-width: 750px) {
@@ -975,32 +981,33 @@ span {
 }
 
 .card--col {
-  max-width: 35%;
-  max-height: 60%;
-  padding: 0rem 0 0.8rem;
+  max-width: 33%;
+  max-height: 45%;
+  padding: 0;
 }
 
 @media only screen and (max-width: 750px) {
   .card--col {
-    max-width: 45%;
+    max-width: 40%;
+    max-height: 45%;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .card--col {
-    max-width: 60%;
+    max-width: 55%;
   }
 }
 
 @media only screen and (max-width: 390px) {
   .card--col {
-    max-width: 80%;
+    max-width: 67%;
   }
 }
 
 @media only screen and (max-width: 345px) {
   .card--col {
-    max-width: 85%;
+    max-width: 80%;
   }
 }
 
@@ -1018,7 +1025,7 @@ span {
 
 .card__header--col {
   max-width: 100%;
-  min-height: 25%;
+  max-height: 50%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1029,9 +1036,9 @@ span {
 }
 
 .card__content--col {
-  padding: 0 1rem;
+  padding: 0 0.7rem 0.2rem;
   max-width: 100%;
-  min-height: 38%;
+  min-height: 50%;
 }
 
 .card__icon {
@@ -1102,6 +1109,20 @@ span {
 }
 
 .list {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  min-width: 60%;
+}
+
+@media only screen and (max-width: 390px) {
+  .list {
+    min-width: 75%;
+  }
+}
+
+.list-stacked {
   max-height: 42vh;
   overflow-y: auto;
   -webkit-box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1);
@@ -1111,12 +1132,14 @@ span {
 
 .list__item {
   padding: 1rem;
+  cursor: pointer;
   border-bottom: 1px solid #D1D5DB;
 }
 
 .list__item--spaced {
   margin: 0.5rem 0;
   padding: 1rem;
+  cursor: pointer;
   border: 1px solid #D1D5DB;
 }
 

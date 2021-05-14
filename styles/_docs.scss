@@ -58,9 +58,11 @@ iframe {
         &--inputs {
             height: 115vh;
         }
-        &--cards,
-        &--lists {
+        &--cards {
             height: 300vh;
+        }
+        &--lists {
+            height: 240vh;
         }
         &--images {
             height: 140vh;
@@ -123,7 +125,6 @@ iframe {
             }
         }
         &--lists {
-            max-width: 40vw;
             height: 110vh;
         }
         &--search_bar {

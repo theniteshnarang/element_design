@@ -164,6 +164,7 @@
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     padding: 0.5rem;
+    align-self: center;
     @include tablet {
         max-width: 80%;
     }
@@ -174,20 +175,21 @@
         max-width: 99%;
     }
     &--col {
-        max-width: 35%;
-        max-height: 60%;
-        padding: 0rem 0 0.8rem;
+        max-width: 33%;
+        max-height: 45%;
+        padding: 0;
         @include tablet {
-            max-width: 45%;
+            max-width: 40%;
+            max-height: 45%;
         }
         @include phone {
-            max-width: 60%;
+            max-width: 55%;
         }
         @include smphone {
-            max-width: 80%;
+            max-width: 67%;
         }
         @include vsmphone {
-            max-width: 85%;
+            max-width: 80%;
         }
     }
     &__image {
@@ -200,16 +202,16 @@
         max-width: 35%;
         &--col {
             max-width: 100%;
-            min-height: 25%;
+            max-height: 50%;
             align-self: center;
         }
     }
     &__content {
         max-width: 63%;
         &--col {
-            padding: 0 1rem;
+            padding: 0 0.7rem 0.2rem;
             max-width: 100%;
-            min-height: 38%;
+            min-height: 50%;
         }
     }
     &__icon {
@@ -272,16 +274,26 @@
 
 // List Component
 .list {
-    max-height: 42vh;
-    overflow-y: auto;
-    box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1);
-    border: 1px solid $gray-300;
+    text-align: center;
+    align-self: center;
+    min-width: 60%;
+    @include smphone {
+        min-width: 75%;
+    }
+    &-stacked {
+        max-height: 42vh;
+        overflow-y: auto;
+        box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1);
+        border: 1px solid $gray-300;
+    }
     &__item {
         padding: 1rem;
+        cursor: pointer;
         border-bottom: 1px solid $gray-300;
         &--spaced {
             margin: 0.5rem 0;
             padding: 1rem;
+            cursor: pointer;
             border: 1px solid $gray-300;
             &:hover {
                 box-shadow: 2px 2px 3px 0 rgba(1, 1, 1, 0.1);

@@ -9,6 +9,7 @@
 
     <link rel="shortcut icon" href="../data/img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" integrity="sha512-kZqGbhf9JTB4bVJ0G8HCkqmaPcRgo88F0dneK30yku5Y/dep7CZfCnNml2Je/sY4lBoqoksXz4PtVXS4GHSUzQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
     <title>Element Design | Lists</title>
 </head>
@@ -29,40 +30,63 @@
             </nav>
         </div>
     </header>
-
+    <div class="floating-action">
+        <svg id="menu" class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.5" x2="16" y2="1.5" stroke="white" stroke-width="3" />
+            <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" />
+            <line y1="21.5" x2="43" y2="21.5" stroke="white" stroke-width="3" />
+        </svg>
+    </div>
     <main class="main">
         <div class="main__wrapper">
             <div class="main__section main__section--lists flex flex--column flex--justify_around">
                 <h1 class="main__title">Lists</h1>
                 <p>Lists are a continuous group of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.</p>
-                <strong>There are types of list: </strong>
                 <div class="main__content main__content--lists flex flex--column flex--justify_around">
                     <h3>Stacked List</h3>
-                    <ul class="list flex flex--column">
-                        <li class="list__item flex flex--center">List item 1</li>
-                        <li class="list__item flex flex--center">List item 2</li>
-                        <li class="list__item flex flex--center">List item 3</li>
-                        <li class="list__item flex flex--center">List item 4</li>
-                        <li class="list__item flex flex--center">List item 5</li>
-                        <li class="list__item flex flex--center">List item 6</li>
-                        <li class="list__item flex flex--center">List item 7</li>
+                    <ul class="list list-stacked flex flex--column">
+                        <li class="list__item">Item 1</li>
+                        <li class="list__item">Item 2</li>
+                        <li class="list__item">Item 3</li>
+                        <li class="list__item">Item 4</li>
+                        <li class="list__item">Item 5</li>
+                        <li class="list__item">Item 6</li>
+                        <li class="list__item">Item 7</li>
                     </ul>
-                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2520flex%2520flex--column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25205%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25206%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item%2520flex%2520flex--center%2522%253EList%2520item%25207%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%252Ful%253E"
-                        style="width: 731px; height: 295px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts ">
-                    </iframe>
+                    <pre>
+                        <code class="html">
+                            &lt;ul class="list list-stacked flex flex--column">
+                                &lt;li class="list__item">Item 1&lt;/li>
+                                &lt;li class="list__item">Item 2&lt;/li>
+                                &lt;li class="list__item">Item 3&lt;/li>
+                                &lt;li class="list__item">Item 4&lt;/li>
+                                &lt;li class="list__item">Item 5&lt;/li>
+                                &lt;li class="list__item">Item 6&lt;/li>
+                                &lt;li class="list__item">Item 7&lt;/li>
+                            &lt;/ul>
+                        </code>
+                    </pre>
                 </div>
                 <div class="main__content main__content--lists flex flex--column flex--justify_around">
                     <h3>Spaced List</h3>
-                    <ul class="flex flex--column">
-                        <li class="list__item--spaced flex flex--center">List item 1</li>
-                        <li class="list__item--spaced flex flex--center">List item 2</li>
-                        <li class="list__item--spaced flex flex--center">List item 3</li>
-                        <li class="list__item--spaced flex flex--center">List item 4</li>
-                        <li class="list__item--spaced flex flex--center">List item 5</li>
+                    <ul class="list list-spaced flex flex--column">
+                        <li class="list__item--spaced">List item 1</li>
+                        <li class="list__item--spaced">List item 2</li>
+                        <li class="list__item--spaced">List item 3</li>
+                        <li class="list__item--spaced">List item 4</li>
+                        <li class="list__item--spaced">List item 5</li>
                     </ul>
-                    <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=material&wt=none&l=htmlmixed&ds=false&dsyoff=0px&dsblur=82px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=15px&lh=90%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522flex%2520flex--column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item--spaced%2520flex%2520flex--center%2522%253EList%2520item%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item--spaced%2520flex%2520flex--center%2522%253EList%2520item%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item--spaced%2520flex%2520flex--center%2522%253EList%2520item%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item--spaced%2520flex%2520flex--center%2522%253EList%2520item%25204%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cli%2520class%253D%2522list__item--spaced%2520flex%2520flex--center%2522%253EList%2520item%25205%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%252Ful%253E"
-                        style="width: 731px; height: 243px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts ">
-                    </iframe>
+                    <pre>
+                        <code class="html">
+                            &lt;ul class="list list-spaced flex flex--column">
+                                &lt;li class="list__item--spaced">List item 1&lt;/li>
+                                &lt;li class="list__item--spaced">List item 2&lt;/li>
+                                &lt;li class="list__item--spaced">List item 3&lt;/li>
+                                &lt;li class="list__item--spaced">List item 4&lt;/li>
+                                &lt;li class="list__item--spaced">List item 5&lt;/li>
+                            &lt;/ul>
+                        </code>
+                    </pre>
                 </div>
             </div>
             <footer class="footer flex flex--justify_center ">
@@ -92,7 +116,7 @@
         </div>
     </main>
 
-    <aside class="components ">
+    <aside class="components" id="components">
         <ul class="components__list flex flex--column ">
             <li><a href="../docs.html ">Getting Started</a></li>
             <li><a href="../components/layout.html ">Layout</a></li>
@@ -111,7 +135,11 @@
             <li><a href="../components/typography.html">Typography</a></li>
         </ul>
     </aside>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../index.js"></script>
 </body>
 
 </html>
