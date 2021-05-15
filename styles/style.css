@@ -75,7 +75,6 @@ span {
   border-bottom: 0.3px solid var(--light-color);
   position: fixed;
   top: 0;
-  right: 0;
   min-width: 100vw;
   z-index: 1;
 }
@@ -381,6 +380,9 @@ span {
 
 .footer__about__list {
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__about__list__item {
@@ -1060,6 +1062,31 @@ span {
 .card__strike {
   text-decoration: line-through;
   font-size: 0.75em;
+}
+
+.image {
+  max-width: 25%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .image {
+    max-width: 33%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .image {
+    max-width: 45%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .image {
+    max-width: 50%;
+  }
 }
 
 .image--rounded {

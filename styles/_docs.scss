@@ -4,7 +4,6 @@ iframe {
     }
     @include phone {
         min-width: 330px;
-        // display: none;
     }
     @include vsmphone {
         min-width: 230px;

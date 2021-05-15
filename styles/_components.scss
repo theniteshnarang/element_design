@@ -235,6 +235,17 @@
 
 //Image Component
 .image {
+    max-width: 25%;
+    align-self: center;
+    @include phone {
+        max-width: 33%;
+    }
+    @include smphone {
+        max-width: 45%;
+    }
+    @include smphone {
+        max-width: 50%;
+    }
     &--rounded {
         border-radius: 50%;
     }

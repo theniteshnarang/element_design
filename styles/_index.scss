@@ -74,7 +74,7 @@ span {
     border-bottom: 0.3px solid var(--light-color);
     position: fixed;
     top: 0;
-    right: 0;
+    // right: 0;
     min-width: 100vw;
     z-index: 1;
     &__wrapper {
@@ -241,9 +241,6 @@ span {
         @include phone {
             height: 23vh;
         }
-        // @include smphone {
-        //     height: 20vh;
-        // }
         &__content {
             height: inherit;
             margin-left: 1.5rem;
@@ -268,6 +265,7 @@ span {
         }
         &__list {
             margin-top: 1rem;
+            display: flex;
             &__item {
                 padding: 0 0.5rem;
             }
