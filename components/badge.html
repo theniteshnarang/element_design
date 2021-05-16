@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="shortcut icon" href="../data/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" integrity="sha512-kZqGbhf9JTB4bVJ0G8HCkqmaPcRgo88F0dneK30yku5Y/dep7CZfCnNml2Je/sY4lBoqoksXz4PtVXS4GHSUzQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
+    <title>Element Design | Badge</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper flex flex--justify_between flex--align_center">
+            <a class="header__brand flex flex--align_center" href="../index.html">
+                <img class="header__brand__logo" src="../data/img/logo.svg" alt="logo">
+                <span class="header__brand__title">Element Design</span>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list flex flex--justify_between">
+                    <li><a class="header__list__item" href="../index.html">Home</a></li>
+                    <li><a class="header__list__item active" href="../docs.html">Docs</a></li>
+                    <li><a class="header__list__item" href="https://github.com/theniteshnarang/element_design">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="floating-action">
+        <svg id="menu" class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.5" x2="16" y2="1.5" stroke="white" stroke-width="3" />
+            <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" />
+            <line y1="21.5" x2="43" y2="21.5" stroke="white" stroke-width="3" />
+        </svg>
+    </div>
+
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="main__section main__section--badge flex flex--column flex--justify_between">
+                <h1 class="main__title">Badge</h1>
+                <p>Badges can be used anywhere that requires background color and color property.</p>
+                <strong>There are types of Alert: </strong>
+                <div class="main__content main__content--badge flex flex--column flex--justify_between">
+                    <div class="badge-container flex flex--justify_around">
+                        <span class="badge color-info bg-blue-200">info</span>
+                        <span class="badge color-success bg-green-200">success</span>
+                        <span class="badge color-error bg-red-200">error</span>
+                        <span class="badge color-warning bg-yellow-200">warning</span>
+                    </div>
+
+                    <pre>
+                        <code class="html">
+                            &lt;div>
+                                &lt;span class="badge color-info bg-blue-200">info&lt;/span>
+                                &lt;span class="badge color-success bg-green-200">success&lt;/span>
+                                &lt;span class="badge color-error bg-red-200">error&lt;/span>
+                                &lt;span class="badge color-warning bg-yellow-200">warning&lt;/span>
+                            &lt;/div>
+                        </code>
+                    </pre>
+
+                </div>
+            </div>
+            <footer class="footer flex flex--justify_center ">
+                <div class="footer__wrapper ">
+                    <div class="footer__about flex flex--align_center ">
+                        <a href="# " class="footer__logo ">
+                            <img src="../data/img/logo.svg " alt=" ">
+                        </a>
+                        <div class="footer__about__content flex flex--column flex--justify_center ">
+                            <p>
+                                Element is an component library, developed for personal use by Nitesh Narang. It's designed is inspired by <a href="https://material.io/ ">Material Design</a>.
+                            </p>
+                            <ul class='footer__about__list'>
+                                <li><a class="footer__about__list__item" href="https://github.com/theniteshnarang">Github</a></li>
+                                <li><a class="footer__about__list__item" href="https://twitter.com/theniteshnarang">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__legal flex flex--align_center ">
+                        <a href="./index.html " class="footer__logo ">
+                            <img class="brand__logo " src="../data/img/author_logo.svg " alt=" ">
+                        </a>
+                        <p class="footer__legal__content "><strong>© Made with <span>♥</span> , 2021.</strong></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <aside class="components" id="components">
+        <ul class="components__list flex flex--column ">
+            <li><a href="../docs.html ">Getting Started</a></li>
+            <li><a href="../components/layout.html ">Layout</a></li>
+            <li><a href="../components/avatar.html ">Avatar</a></li>
+            <li><a href="../components/alert.html ">Alert</a></li>
+            <li><a class="active" href="../components/badge.html">Badge</a></li>
+            <li><a href="../components/button.html">Button</a></li>
+            <li><a href="../components/cards.html">Cards</a></li>
+            <li><a href="../components/image.html">Images</a></li>
+            <li><a href="../components/input.html">Input</a></li>
+            <li><a href="../components/list.html">Lists</a></li>
+            <li><a href="../components/navigation.html">Navigation</a></li>
+            <li><a href="../components/modal.html">Modal</a></li>
+            <li><a href="../components/rating.html">Ratings</a></li>
+            <li><a href="../components/search-bar.html">Search Bar</a></li>
+            <li><a href="../components/typography.html">Typography</a></li>
+        </ul>
+    </aside>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../index.js"></script>
+</body>
+
+</html>

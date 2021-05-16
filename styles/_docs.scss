@@ -1,0 +1,216 @@
+iframe {
+    @include tablet {
+        min-width: 430px;
+    }
+    @include phone {
+        min-width: 330px;
+    }
+    @include vsmphone {
+        min-width: 230px;
+    }
+}
+
+.main {
+    &__section {
+        height: 100vh;
+        max-width: 58vw;
+        margin: 4rem auto 0 7.35rem;
+        text-align: left;
+        @include tablet {
+            margin-left: 1rem;
+            max-width: 90vw;
+            margin-top: 5rem;
+        }
+        @include vsmphone {
+            margin-top: 3.5rem;
+        }
+        &--docs {
+            height: 75vh;
+        }
+        &--layout {
+            height: 200vh;
+            @include tablet {
+                height: 220vh;
+            }
+            @include phone {
+                height: 180vh;
+            }
+        }
+        &--avatar {
+            height: 160vh;
+        }
+        &--alert {
+            height: 200vh;
+        }
+        &--badge {
+            height: 60vh;
+            @include phone {
+                height: 70vh;
+            }
+        }
+        &--button {
+            height: 115vh;
+            @include tablet {
+                height: 120vh;
+            }
+        }
+        &--inputs {
+            height: 115vh;
+        }
+        &--cards {
+            height: 300vh;
+        }
+        &--lists {
+            height: 240vh;
+        }
+        &--images {
+            height: 130vh;
+        }
+        &--rating,
+        &--search_bar {
+            height: 77vh;
+        }
+        &--modal {
+            height: 125vh;
+        }
+    }
+    &__content {
+        height: 30vh;
+        &--layout {
+            height: 65vh;
+            @include tablet {
+                height: 75vh;
+            }
+            @include phone {
+                height: 80vh;
+            }
+        }
+        &--avatar {
+            height: 45vh;
+        }
+        &--alert {
+            height: 50vh;
+            div {
+                margin-left: 2rem;
+            }
+        }
+        &--badge {
+            height: 40vh;
+            @include phone {
+                height: 45vh;
+            }
+        }
+        &--button {
+            height: 45vh;
+            @include tablet {
+                height: 50vh;
+            }
+        }
+        &--cards {
+            height: 120vh;
+            &-vertical {
+                height: 156vh;
+            }
+        }
+        &--images {
+            height: 70vh;
+        }
+        &--rating {
+            height: 60vh;
+        }
+        &--inputs {
+            height: 50vh;
+            max-width: 60vw;
+            @include tablet {
+                max-width: 99%;
+            }
+        }
+        &--lists {
+            height: 110vh;
+        }
+        &--search_bar {
+            height: 60vh;
+        }
+        &--modal {
+            height: 115vh;
+        }
+        &--navigation {
+            height: 85vh;
+        }
+        &__img {
+            max-width: 5rem;
+            max-height: 5rem;
+        }
+    }
+    &__desc--layout {
+        height: 45vh;
+        margin-bottom: 1rem;
+    }
+    &__title {
+        font-weight: bold;
+        margin-bottom: 1rem;
+        @include smphone {
+            font-size: 1.5rem;
+        }
+        @include vsmphone {
+            margin: 0.7rem 0
+        }
+    }
+    .footer {
+        height: 45vh;
+    }
+}
+
+.floating-action {
+    position: fixed;
+    border: 1px solid var(--light-color);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    left: 0;
+    bottom: 5vh;
+    cursor: pointer;
+    z-index: 1;
+    background-color: var(--primary-color);
+    opacity: 0.7;
+    display: none;
+    &:hover {
+        opacity: 0.9;
+    }
+    @include tablet {
+        display: block;
+    }
+}
+
+.components {
+    position: fixed;
+    z-index: 1;
+    top: 10.5vh;
+    right: 0vw;
+    min-width: 21.3vw;
+    background-color: inherit;
+    margin-right: 7.3rem;
+    line-height: 1.5;
+    overflow-y: auto;
+    height: 90vh;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    @include tablet {
+        display: none;
+        margin-right: 0;
+        min-width: 38vw;
+    }
+    @include smphone {
+        min-width: 50vw
+    }
+    &__list {
+        padding: 1rem 0 1rem 1.5rem;
+        box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        text-align: left;
+        li {
+            margin: 0.3rem 0;
+        }
+    }
+    &-show {
+        display: block;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./data/img/favicon.svg" type="image/x-icon">
+    <title>Element Design</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__wrapper flex flex--justify_between flex--align_center">
+            <a class="header__brand flex flex--align_center" href="./index.html">
+                <img class="header__brand__logo" src="./data/img/logo.svg" alt="logo">
+                <span class="header__brand__title">Element Design</span>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list flex flex--justify_between">
+                    <li><a class="header__list__item active" href="./index.html">Home</a></li>
+                    <li><a class="header__list__item" href="./docs.html">Docs</a></li>
+                    <li><a class="header__list__item" href="https://github.com/theniteshnarang/element_design">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero flex flex--center">
+        <div class="hero__wrapper mt-2 flex flex--column flex--justify_between flex--align_center">
+            <img src="./data/img/brand_logo.svg" alt="" class="hero__brand__logo">
+            <h1 class="hero__title">Build beautiful products, <span>faster.</span></h1>
+            <p class="hero__desc color-gray-300">Element is a light-weight design system – that helps teams build high-quality digital experiences.</p>
+            <div class="hero__action">
+                <a href="./docs.html" class="btn btn-primary btn--link">Get Started</a>
+                <a download="element_design.min.css" href="./styles/element-design.min.css" class="hero__action--download btn btn-secondary btn--link">Download</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer flex flex--justify_center">
+        <div class="footer__wrapper">
+            <div class="footer__about flex flex--align_center">
+                <a href="#" class="footer__logo">
+                    <img src="./data/img/logo.svg" alt="">
+                </a>
+                <div class="footer__about__content flex flex--column flex--justify_center">
+                    <p>
+                        Element is an component library, developed for personal use by Nitesh Narang. It's designed is inspired by <a href="https://material.io/">Material Design</a>.
+                    </p>
+                    <ul class='footer__about__list'>
+                        <li><a class="footer__about__list__item" href="https://github.com/theniteshnarang">Github</a></li>
+                        <li><a class="footer__about__list__item" href="https://twitter.com/theniteshnarang">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__legal flex flex--align_center">
+                <a href="./index.html" class="footer__logo">
+                    <img class="brand__logo" src="./data/img/author_logo.svg" alt="">
+                </a>
+                <p class="footer__legal__content"><strong>© Made with <span>♥</span> , 2021.</strong></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

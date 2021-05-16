@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../data/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" integrity="sha512-kZqGbhf9JTB4bVJ0G8HCkqmaPcRgo88F0dneK30yku5Y/dep7CZfCnNml2Je/sY4lBoqoksXz4PtVXS4GHSUzQ==" crossorigin="anonymous" />
+    <title>Element Design | Cards</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper flex flex--justify_between flex--align_center">
+            <a class="header__brand flex flex--align_center" href="../index.html">
+                <img class="header__brand__logo" src="../data/img/logo.svg" alt="logo">
+                <span class="header__brand__title">Element Design</span>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list flex flex--justify_between">
+                    <li><a class="header__list__item" href="../index.html">Home</a></li>
+                    <li><a class="header__list__item active" href="../docs.html">Docs</a></li>
+                    <li><a class="header__list__item" href="https://github.com/theniteshnarang/element_design">Github</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="floating-action">
+        <svg id="menu" class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.5" x2="16" y2="1.5" stroke="white" stroke-width="3" />
+            <line y1="11.5" x2="28" y2="11.5" stroke="white" stroke-width="3" />
+            <line y1="21.5" x2="43" y2="21.5" stroke="white" stroke-width="3" />
+        </svg>
+    </div>
+
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="main__section main__section--cards flex flex--column flex--justify_between">
+                <h1 class="main__title">Cards</h1>
+                <p>Cards contain content and actions about a single subject.</p>
+                <p>They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.</p>
+                <div class="main__content--cards flex flex--column flex--justify_around">
+                    <h2>Horizontal</h2>
+                    <div class="card flex flex--justify_between">
+                        <div class="card__header flex">
+                            <img class="card__image" src="https://images-na.ssl-images-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg" alt="card-image">
+                        </div>
+
+                        <div class="card__content flex flex--column flex--justify_around">
+                            <div class="flex flex--justify_between flex--align_center">
+                                <h3>Card Title</h3>
+                                <i class="card__icon bi bi-heart-fill color-primary"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, obcaecati aperiam. Sint iure, perferendis mollitia earum.</p>
+                            <span>Price: <strong class="color-secondary">₹2000</strong> <span
+                                    class="card__strike">₹2500</span> <span class="color-red-500">Save
+                                    ₹500</span></span>
+                            <button class="btn btn-secondary btn-round--corner">Add To Cart</button>
+                        </div>
+                    </div>
+                    <pre>
+                        <code class="html">
+                            &lt;div class="card flex flex--justify_around pr-1 ml-1">
+                                &lt;div class="card__header flex">
+                                    &lt;img class="card__image" src="https://images-na.ssl-images-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg" alt="card-image">
+                                &lt;/div>
+        
+                                &lt;div class="card__content flex flex--column flex--justify_around">
+                                    &lt;div class="flex flex--justify_between flex--align_center">
+                                        &lt;h3>Card Title&lt;/h3>
+                                        &lt;i class="card__icon bi bi-heart-fill color-primary">&lt;/i>
+                                    &lt;/div>
+                                    &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, obcaecati aperiam. Sint iure, perferendis mollitia earum.&lt;/p>
+                                    &lt;span>Price: &lt;strong class="color-secondary">₹2000&lt;/strong> &lt;span
+                                            class="card__strike">₹2500&lt;/span> &lt;span class="color-red-500">Save
+                                            ₹500&lt;/span>&lt;/span>
+                                    &lt;button class="btn btn-secondary btn-round--corner">Add To Cart&lt;/button>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+                <div class="main__content--cards-vertical flex flex--column flex--justify_around">
+                    <h2>Vertical</h2>
+                    <div class="card card--col flex flex--column">
+                        <div class="card__header--col pos-rel flex flex--column">
+                            <img class="card__image" src="https://images-na.ssl-images-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg" alt="card-image" />
+                            <i class="card__icon card__icon--col bi bi-heart-fill color-primary"></i>
+                        </div>
+                        <div class="card__content--col flex flex--column flex--justify_around">
+                            <h3>Card Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, obcaecati aperiam. Sint iure, perferendis mollitia earum.</p>
+                            <span>Price: <strong class="color-secondary">₹2000</strong> <span
+                                    class="card__strike">₹2500</span> <span class="color-red-500">Save
+                                    ₹500</span></span>
+                            <button class="btn btn-secondary color-light btn-round--corner">Add To Cart</button>
+                        </div>
+                    </div>
+                    <pre>
+                        <code class="html">
+                            &lt;div class="card card--col flex flex--column">
+                                &lt;div class="card__header--col pos-rel flex flex--column">
+                                    &lt;img class="card__image" src="https://images-na.ssl-images-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg" alt="card-image" />
+                                    &lt;i class="card__icon card__icon--col bi bi-heart-fill color-primary">&lt;/i>
+                                &lt;/div>
+                                &lt;div class="card__content--col flex flex--column flex--justify_between">
+                                    &lt;h3 class="mt-1">Card Title&lt;/h3>
+                                    &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, obcaecati aperiam. Sint iure, perferendis mollitia earum.&lt;/p>
+                                    &lt;span>Price: &lt;strong class="color-secondary">₹2000&lt;/strong> &lt;span
+                                            class="card__strike">₹2500&lt;/span> &lt;span class="color-red-500">Save
+                                            ₹500&lt;/span>&lt;/span>
+                                    &lt;button class="btn btn-secondary color-light btn-round--corner">Add To Cart&lt;/button>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <footer class="footer flex flex--justify_center ">
+                <div class="footer__wrapper ">
+                    <div class="footer__about flex flex--align_center ">
+                        <a href="# " class="footer__logo ">
+                            <img src="../data/img/logo.svg " alt=" ">
+                        </a>
+                        <div class="footer__about__content flex flex--column flex--justify_center ">
+                            <p>
+                                Element is an component library, developed for personal use by Nitesh Narang. It's designed is inspired by <a href="https://material.io/ ">Material Design</a>.
+                            </p>
+                            <ul class='footer__about__list'>
+                                <li><a class="footer__about__list__item" href="https://github.com/theniteshnarang">Github</a></li>
+                                <li><a class="footer__about__list__item" href="https://twitter.com/theniteshnarang">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__legal flex flex--align_center ">
+                        <a href="./index.html " class="footer__logo ">
+                            <img class="brand__logo " src="../data/img/author_logo.svg " alt=" ">
+                        </a>
+                        <p class="footer__legal__content "><strong>© Made with <span>♥</span> , 2021.</strong></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <aside class="components" id="components">
+        <ul class="components__list flex flex--column">
+            <li><a href="../docs.html ">Getting Started</a></li>
+            <li><a href="../components/layout.html ">Layout</a></li>
+            <li><a href="../components/avatar.html ">Avatar</a></li>
+            <li><a href="../components/alert.html ">Alert</a></li>
+            <li><a href="../components/badge.html">Badge</a></li>
+            <li><a href="../components/button.html">Button</a></li>
+            <li><a class="active" href="../components/cards.html">Cards</a></li>
+            <li><a href="../components/image.html">Images</a></li>
+            <li><a href="../components/input.html">Input</a></li>
+            <li><a href="../components/list.html">Lists</a></li>
+            <li><a href="../components/navigation.html">Navigation</a></li>
+            <li><a href="../components/modal.html">Modal</a></li>
+            <li><a href="../components/rating.html">Ratings</a></li>
+            <li><a href="../components/search-bar.html">Search Bar</a></li>
+            <li><a href="../components/typography.html">Typography</a></li>
+        </ul>
+    </aside>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="../index.js"></script>
+</body>
+
+</html>

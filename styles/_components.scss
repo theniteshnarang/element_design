@@ -1,0 +1,419 @@
+// Avatar Component
+.avatar {
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    max-width: inherit;
+    max-height: inherit;
+    &--badge {
+        min-width: 1vw;
+        min-height: 1vw;
+        position: absolute;
+        bottom: 1vh;
+        right: 1vw;
+        @include tablet {
+            min-width: 2vw;
+            min-height: 2vw;
+        }
+        @include phone {
+            min-width: 3vw;
+            min-height: 3vw;
+            right: 2vw;
+        }
+        @include smphone {
+            right: 3vw;
+        }
+        @include vsmphone {
+            right: 4vw;
+        }
+    }
+    &--text {
+        font-size: 3.3rem;
+        padding: 0.6rem;
+        color: var(--light-color);
+        @include tablet {
+            font-size: 2.9rem;
+        }
+    }
+}
+
+// Alert Component
+.alert {
+    border-radius: 0.3rem;
+    max-width: 30vw;
+    color: var(--light-color);
+    height: 6.5vh;
+    @include tablet {
+        max-width: 40vw;
+    }
+    @include phone {
+        max-width: 53vw;
+    }
+    @include smphone {
+        max-width: 66vw;
+    }
+    @include vsmphone {
+        max-width: 75vw;
+    }
+    &--cross {
+        position: absolute;
+        font-size: 1.7rem;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        margin-top: -0.3rem;
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}
+
+// Badge Component
+.badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.3rem;
+    &-container {
+        flex-wrap: wrap;
+        gap: 0.5rem
+    }
+}
+
+// Button Component
+.btn {
+    padding: 0.3rem 1rem;
+    line-height: 2;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.875rem;
+    letter-spacing: 0.09375rem;
+    border: none;
+    @include phone {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+    @include smphone {
+        font-size: 0.7rem;
+    }
+    @include vsmphone {}
+    &-primary {
+        color: var(--primary-color);
+        background-color: var(--light-color);
+        &:hover {
+            color: var(--dark-color);
+            background-color: $gray-300;
+        }
+    }
+    &-container {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    &-secondary,
+    &-solid {
+        color: var(--light-color);
+        background-color: var(--primary-color);
+        &:hover {
+            color: var(--dark-color);
+            background-color: var(--secondary-color);
+        }
+    }
+    &-secondary,
+    &-outline {
+        border: 1px solid var(--light-color);
+        &:hover {
+            border-color: var(--secondary-color);
+        }
+    }
+    &-outline {
+        border-color: var(--primary-color);
+        &:hover {
+            background-color: var(--secondary-color);
+        }
+    }
+    &-round {
+        border-radius: 7rem;
+        &--corner {
+            border-radius: 0.3rem;
+        }
+    }
+    &-icon {
+        padding: 0;
+        background-color: inherit;
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
+    &-sm {
+        line-height: 1.5;
+        padding: 0.3rem 0.75rem;
+    }
+    &--link {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline: thin dotted;
+    }
+}
+
+// Card Component
+.card {
+    max-width: 60%;
+    background-color: $gray-50;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    align-self: center;
+    @include tablet {
+        max-width: 80%;
+    }
+    @include phone {
+        max-width: 90%;
+    }
+    @include smphone {
+        max-width: 99%;
+    }
+    &--col {
+        max-width: 33%;
+        max-height: 45%;
+        padding: 0;
+        @include tablet {
+            max-width: 40%;
+            max-height: 45%;
+        }
+        @include phone {
+            max-width: 55%;
+        }
+        @include smphone {
+            max-width: 67%;
+        }
+        @include vsmphone {
+            max-width: 80%;
+        }
+    }
+    &__image {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 0.5rem;
+        object-fit: contain;
+    }
+    &__header {
+        max-width: 35%;
+        &--col {
+            max-width: 100%;
+            max-height: 50%;
+            align-self: center;
+        }
+    }
+    &__content {
+        max-width: 63%;
+        &--col {
+            padding: 0 0.7rem 0.2rem;
+            max-width: 100%;
+            min-height: 50%;
+        }
+    }
+    &__icon {
+        cursor: pointer;
+        font-size: 1.3em;
+        margin-right: 0.5rem;
+        &:hover {
+            color: var(--secondary-color);
+        }
+        &--col {
+            position: absolute;
+            right: 0.5vw;
+            top: 3vh;
+        }
+    }
+    &__strike {
+        text-decoration: line-through;
+        font-size: 0.75em;
+    }
+}
+
+//Image Component
+.image {
+    max-width: 25%;
+    align-self: center;
+    @include phone {
+        max-width: 33%;
+    }
+    @include smphone {
+        max-width: 45%;
+    }
+    @include smphone {
+        max-width: 50%;
+    }
+    &--rounded {
+        border-radius: 50%;
+    }
+}
+
+//Input Component
+.input {
+    padding: 0.3rem 0.2rem;
+    border: 1px solid var(--primary-color);
+    outline: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    &-label {
+        margin: 0.5rem 0;
+        color: var(--primary-color);
+    }
+    &-required {
+        margin-top: 0.5rem;
+    }
+    &-container {
+        max-width: 50%;
+        @include smphone {
+            max-width: 60%;
+        }
+        @include vsmphone {
+            max-width: 70%;
+        }
+    }
+    &--error {
+        border-color: $red-600;
+        outline-color: $red-500;
+    }
+    &:focus {
+        border-color: var(--secondary-color);
+        outline-color: var(--secondary-color);
+    }
+}
+
+// List Component
+.list {
+    text-align: center;
+    align-self: center;
+    min-width: 60%;
+    @include smphone {
+        min-width: 75%;
+    }
+    &-stacked {
+        max-height: 42vh;
+        overflow-y: auto;
+        box-shadow: -1px -1px 3px 0 rgba(1, 1, 1, 0.1);
+        border: 1px solid $gray-300;
+    }
+    &__item {
+        padding: 1rem;
+        cursor: pointer;
+        border-bottom: 1px solid $gray-300;
+        &--spaced {
+            margin: 0.5rem 0;
+            padding: 1rem;
+            cursor: pointer;
+            border: 1px solid $gray-300;
+            &:hover {
+                box-shadow: 2px 2px 3px 0 rgba(1, 1, 1, 0.1);
+                transform: scale(1.03);
+            }
+        }
+        &:hover {
+            background-color: $blue-200;
+        }
+    }
+}
+
+// Search Bar Component
+.search-bar {
+    max-height: 7vh;
+    max-width: 50%;
+    @include phone {
+        max-width: 60%;
+    }
+    @include vsmphone {
+        max-width: 67%;
+    }
+    &__input {
+        width: 100%;
+        padding: 0.4rem;
+        font-size: 1.2rem;
+        color: var(--dark-color);
+        border: 1px solid var(--primary-color);
+        border-radius: 0.3rem;
+        @include phone {
+            font-size: 1rem;
+        }
+        &:focus {
+            outline: thin dotted var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+    }
+    &__icon {
+        cursor: pointer;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 1.2rem;
+        color: var(--secondary-color);
+        @include phone {
+            top: 0.4rem;
+        }
+    }
+}
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    &-content {
+        border-radius: 0.3rem;
+        width: 40vw;
+        background-color: white;
+        @include tablet {
+            width: 60vw;
+        }
+        @include phone {
+            width: 80vw;
+        }
+        @include smphone {
+            width: 90vw;
+        }
+        @include vsmphone {
+            width: 95vw;
+        }
+    }
+    &-body {
+        min-height: 15vh;
+        border: 1px solid $gray-300;
+        border-left: 0;
+        border-right: 0;
+    }
+    &-header {
+        min-height: 7vh;
+    }
+    &-footer {
+        min-height: 10vh;
+    }
+    &-hide {
+        display: none !important;
+    }
+    &-close {
+        cursor: pointer;
+    }
+    &-btn {
+        position: absolute;
+        top: -1.7vh;
+        right: 1.8vw;
+        @include phone {
+            top: -0.5vh;
+        }
+    }
+}
+
+.navigation {
+    min-height: 10vh;
+    &-list {
+        display: flex;
+        // @include tablet {
+        //     flex-direction: column;
+        // }
+    }
+}
